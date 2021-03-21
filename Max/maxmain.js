@@ -26,7 +26,7 @@ yoff=0;
 
 const bggeometry = new THREE.PlaneGeometry(window.innerWidth*2,window.innerHeight*2,10,10);
 const bgloader = new THREE.TextureLoader();
-const bgmaterial = new THREE.MeshBasicMaterial( { map: bgloader.load("background.png") } );
+const bgmaterial = new THREE.MeshBasicMaterial( { map: bgloader.load("maxbg.png") } );
 const bgmesh = new THREE.Mesh(bggeometry, bgmaterial);
 
 scene.add(bgmesh);
