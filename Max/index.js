@@ -24,14 +24,6 @@ mesh.rotation.x = THREE.Math.degToRad(-55);
 yoff=0;
 }
 
-const bggeometry = new THREE.PlaneGeometry(window.innerWidth*2,window.innerHeight*2,10,10);
-const bgloader = new THREE.TextureLoader();
-const bgmaterial = new THREE.MeshBasicMaterial( { map: bgloader.load("maxbg.png") } );
-const bgmesh = new THREE.Mesh(bggeometry, bgmaterial);
-
-scene.add(bgmesh);
-bgmesh.position.z = -1*window.innerHeight;
-
 function updateVertices(geom){
     var vertices = geom.geometry.attributes.position.array;
     for(let i = 0;i<=vertices.length;i+=3){
