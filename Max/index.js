@@ -55,17 +55,6 @@ function animate(){
     renderer.render(scene, camera)
 }
 
-function onWindowResize(){
-    console.log("onwindowresize");
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-
-    scene.remove(mesh);
-    createPlane();
-}
-
-window.addEventListener('resize', onWindowResize);
 
 createPlane();
 animate();
