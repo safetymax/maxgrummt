@@ -45,7 +45,7 @@ function updateVertices(geom){
     yoff++;
 }
 
-camera.position.z = 800;
+camera.position.z = window.innerHeight;
 
 function animate(){
     requestAnimationFrame(animate);
