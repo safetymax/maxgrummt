@@ -64,7 +64,7 @@ function onWindowResize(){
     createPlane();
 }
 
-window.addEventListener('resize', onWindowResize, false);
+window.addEventListener('resize', onWindowResize);
 
 createPlane();
 animate();
