@@ -14,7 +14,7 @@ document.body.appendChild(renderer.domElement);
 
 
 function createPlane(){
-geometry = new THREE.PlaneBufferGeometry( window.innerWidth, window.innerWidth, 20, 20 );
+geometry = new THREE.PlaneBufferGeometry( window.innerHeight, window.innerHeight, 20, 20 );
 material = new THREE.MeshBasicMaterial( {color: 0x800080, wireframe: true} );
 mesh = new THREE.Mesh(geometry, material);
 
