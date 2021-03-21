@@ -45,7 +45,7 @@ function updateVertices(geom){
     yoff++;
 }
 
-camera.position.z = window.innerHeight;
+camera.position.z = window.innerWidth/window.innerHeight*400;
 
 function animate(){
     requestAnimationFrame(animate);
@@ -59,6 +59,9 @@ function onWindowResize(){
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+
+    scene.remove(mesh);
+    createPlane();
 }
 
 window.addEventListener('resize', onWindowResize, false);
