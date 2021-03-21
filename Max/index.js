@@ -47,6 +47,5 @@ function animate(){
     renderer.render(scene, camera)
 }
 
-console.log("test");
 createPlane();
 animate();
