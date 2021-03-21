@@ -35,17 +35,17 @@ bgmesh.position.z = -1*window.innerHeight;
 function updateVertices(geom){
     var vertices = geom.geometry.attributes.position.array;
     for(let i = 0;i<=vertices.length;i+=3){
-        vertices[i+2] = noise.perlin2(vertices[i]/200,(vertices[i+1]-yoff)/200)*100;
+        vertices[i+2] = noise.perlin2(vertices[i]/window.innerWidth*7,(vertices[i+1]-yoff)/window.innerWidth*7)*window.innerWidth/15;
     }
     geom.geometry.attributes.position.needsUpdate = true;
     document.body.addEventListener("mousemove", (event) => {
         mesh.rotation.x=-55+(event.y/window.innerHeight+0.5)/2;
         mesh.rotation.y=(window.innerWidth-event.x)/window.innerWidth-0.5;
     });
-    yoff++;
+    yoff+=window.innerWidth/1000;
 }
 
-camera.position.z = window.innerWidth/window.innerHeight*400;
+camera.position.z = window.innerWidth/3;
 
 function animate(){
     requestAnimationFrame(animate);
