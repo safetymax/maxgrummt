@@ -19,6 +19,7 @@ session_start();
 </head>
 <body>
     <h1>Test</h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.js" integrity="sha512-2RDFHqfLZW8IhPRvQYmK9bTLfj/hddxGXQAred2wNZGkrKQkLGj8RCkXfRJPHlDerdHHIzTFaahq4s/P4V6Qig==" crossorigin="anonymous"></script>"
     <script src="js/maxtest.js"></script>
 </body>
 </html>
