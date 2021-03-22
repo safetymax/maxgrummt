@@ -52,7 +52,7 @@ session_start();
             padding: 10px;
             width: 100px;
             color: black;
-            background-color: lightpink;
+            background-color: pink;
             border: none;
         }
         .box{
@@ -68,7 +68,7 @@ session_start();
 <div class="box">
 
 <form method="post">
-<div style="font-size: 20px; margin: 10px; color: white;">Signup</div>
+<div style="font-size: 20px; margin: 10px; color: black;">Signup</div>
 <input class="text" type="text" name="user_name"><br><br>
 <input class="text" type="password" name="password"><br><br>
 

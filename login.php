@@ -65,7 +65,7 @@
             padding: 10px;
             width: 100px;
             color: black;
-            background-color: lightpink;
+            background-color: pink;
             border: none;
         }
         .box{
@@ -81,7 +81,7 @@
 <div class="box">
 
 <form method="post">
-<div style="font-size: 20px; margin: 10px; color: white;">Login</div>
+<div style="font-size: 20px; margin: 10px; black: white;">Login</div>
 <input class="text" type="text" name="user_name"><br><br>
 <input class="text" type="password" name="password"><br><br>
 
