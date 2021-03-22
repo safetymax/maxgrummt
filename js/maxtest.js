@@ -1,4 +1,4 @@
-var connection = new WebSocket("http://maxgrummt.tech/maxtest.php");
+var connection = new WebSocket("ws://maxgrummt.tech/maxtest.php/to/ws");
 
 connection.onopen = function(){
 console.log("connected");
