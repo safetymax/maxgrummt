@@ -40,10 +40,8 @@ session_start();
         html{
             background: black;
         }
-        body{
-            color: black;
-        }
         .text{
+            color: black;
             height: 25px;
             border-radius: 5px;
             padding: 4px;
@@ -53,12 +51,12 @@ session_start();
         .button{
             padding: 10px;
             width: 100px;
-            color: white;
-            background-color: lightblue;
+            color: black;
+            background-color: lightpink;
             border: none;
         }
         .box{
-            background-color: grey;
+            background-color: lightgrey;
             margin: auto;
             width: 300px;
             padding: 20px;
