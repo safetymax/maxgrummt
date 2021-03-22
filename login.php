@@ -22,7 +22,6 @@
                 if($result && mysqli_num_rows($result) > 0)
                 {
                    $user_data = mysqli_fetch_assoc($result);
-                   echo "'$result'";
                    
                    if(password_verify($password,$user_data['password']))
                    {
