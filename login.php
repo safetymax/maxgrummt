@@ -29,6 +29,9 @@
                         header("Location: index.php");
                         die;
                    }
+                   else{
+                       echo "wrong password"
+                   }
                 }
             }
 
