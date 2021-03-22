@@ -23,9 +23,7 @@ function check_loginplus($con)
 {
     if(isset($_SESSION['user_id']))
     {
-        $namee = $_SESSION['user_name'];
-        echo "'$namee'";
-        if($_SESSION['user_name']=="SafetyMax"){
+        if($_SESSION['user_id']=="988575517"){
             $id = $_SESSION['user_id'];
             $query = "select * from users where user_id = '$id' limit 1";
             $result = mysqli_query($con,$query);
@@ -38,7 +36,7 @@ function check_loginplus($con)
     }
 
     //redirect to login
-    //header("Location: login.php");
+    header("Location: login.php");
     die;
 }
 
