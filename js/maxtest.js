@@ -1,5 +1,9 @@
-var connection = new WebSocket("ws://localhost");
+var url = document.URL;
+url = url.substring(url.indexOf(':'));
+url = 'ws'+url;
+
+var connection = new WebSocket(url, ['newbound']);
 
 connection.onopen = function(){
-console.log("connected");
+    console.log("CONNECTED!");
 }
