@@ -68,8 +68,8 @@ session_start();
 <input class="text" type="text" name="user_name"><br><br>
 <input class="text" type="password" name="password"><br><br>
 
-<input class="button" type="submit" value="Login"><br><br>
-<a class="button">Sign in with GitHub</a>
+<input class="button" type="submit" value="Login">
+<a class="button">Sign in with GitHub</a> <br><br>
 
 <a class="text" href="login.php">Click to Login</a><br><br>
 </form>
