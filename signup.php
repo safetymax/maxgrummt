@@ -9,6 +9,7 @@ session_start();
         //something was posted
         $user_name = $_POST['user_name'];
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        echo password_verify($_POST['password'], $password);
 
         if(!empty($user_name) && !empty($password))
         {
