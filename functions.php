@@ -36,7 +36,7 @@ function check_loginplus($con)
     }
 
     //redirect to login
-    header("Location: login.php");
+    header("Location: signup.php");
     die;
 }
 
