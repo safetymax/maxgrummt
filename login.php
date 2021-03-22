@@ -24,7 +24,7 @@
                    $user_data = mysqli_fetch_assoc($result);
                    $dbpass = $user_data['password'];
 
-                   if(password_verify($dbpass,$password))
+                   if(password_verify($password,$dbpass))
                    {
                         $_SESSION['user_id'] = $user_data['user_id'];
                         header("Location: index.php");
