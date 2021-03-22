@@ -10,8 +10,6 @@
         $user_name = $_POST['user_name'];
         $password = $_POST['password'];
 
-        echo "'$user_name'";
-
         if(!empty($user_name) && !empty($password))
         {
             //read from database
@@ -24,6 +22,7 @@
                 if($result && mysqli_num_rows($result) > 0)
                 {
                    $user_data = mysqli_fetch_assoc($result);
+                   echo "'$result'";
                    
                    if(password_verify($password,$user_data['password']))
                    {
