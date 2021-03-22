@@ -1,10 +1,21 @@
+<?php
+session_start();
+
+    $_SESSION;
+
+    include("connection.php");
+    include("functions.php");
+
+    $user_data = check_login($con);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Max/favicon.ico">
+    <link rel="icon" href="img/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <title>Maximilian Grummt</title>
@@ -88,9 +99,9 @@
     </style>
 </head>
 <body> 
-    <script src="Max/perlin.js"></script>
+    <script src="js/perlin.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.js"></script>
-    <script src="Max/index.js"></script> 
+    <script src="js/index.js"></script> 
     <div>
     <button class="header" onclick="myclick()">Maximilian Grummt</button>
     </div>
