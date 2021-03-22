@@ -30,7 +30,7 @@
                         die;
                    }
                    else{
-                       echo "'$password'";
+                       echo "$password['user_id']";
                    }
                 }
             }
