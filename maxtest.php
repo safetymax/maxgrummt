@@ -19,6 +19,6 @@ session_start();
 </head>
 <body>
     <h1>Test</h1>
-    <script href="js/maxtest.js"></script>
+    <script src="js/maxtest.js"></script>
 </body>
 </html>
