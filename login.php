@@ -10,6 +10,8 @@
         $user_name = $_POST['user_name'];
         $password = $_POST['password'];
 
+        echo "'$user_name'";
+
         if(!empty($user_name) && !empty($password))
         {
             //read from database
@@ -23,7 +25,6 @@
                 {
                    $user_data = mysqli_fetch_assoc($result);
                    
-                   echo "'$user_data[]'";
                    if(password_verify($password,$user_data['password']))
                    {
                         $_SESSION['user_id'] = $user_data['user_id'];
