@@ -52,7 +52,7 @@ session_start();
             padding: 10px;
             width: 100px;
             color: black;
-            background-color: pink;
+            background-color: hotpink;
             border: none;
         }
         .box{
