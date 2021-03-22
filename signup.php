@@ -37,6 +37,12 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
     <style type="text/css">
+        html{
+            background: black;
+        }
+        body{
+            color: black;
+        }
         .text{
             height: 25px;
             border-radius: 5px;
@@ -69,7 +75,6 @@ session_start();
 <input class="text" type="password" name="password"><br><br>
 
 <input class="button" type="submit" value="Login">
-<a href="https://github.com/login/oauth/authorize?client_id=e3d7fa37c64b8bed8886&scope=read:email" class="button">Sign in with GitHub</a> <br><br>
 
 <a class="text" href="login.php">Click to Login</a><br><br>
 </form>
