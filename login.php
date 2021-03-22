@@ -29,6 +29,7 @@
                         header("Location: index.php");
                         die;
                    }
+                   echo "password!";
                 }
             }
 
