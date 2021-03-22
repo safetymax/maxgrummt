@@ -69,7 +69,7 @@ session_start();
 <input class="text" type="password" name="password"><br><br>
 
 <input class="button" type="submit" value="Login">
-<a href="https://github.com/login/oauth/authorize?client_id=e3d7fa37c64b8bed8886&scope=read:user" class="button">Sign in with GitHub</a> <br><br>
+<a href="https://github.com/login/oauth/authorize?client_id=e3d7fa37c64b8bed8886&scope=read:email" class="button">Sign in with GitHub</a> <br><br>
 
 <a class="text" href="login.php">Click to Login</a><br><br>
 </form>
