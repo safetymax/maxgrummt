@@ -101,7 +101,7 @@ session_start();
     </div>
     <script>
     function click(){
-        document.location.href = "index.php";
+        <?php header("Location: index.php"); ?>
     }
     </script>
 </body>
