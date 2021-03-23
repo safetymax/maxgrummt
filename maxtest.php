@@ -25,7 +25,7 @@ session_start();
     <title>Max' Labor</title>
 </head>
 <body>
-    <h1>Test</h1>
+    <h1>Chat</h1>
     <script src="js/maxtest.js"></script>
     <form method="post">
         <div style="font-size: 20px; margin: 10px; color: black;">Send Message</div>
@@ -34,11 +34,11 @@ session_start();
         </div>
     </form>
     <ul>
-        <li><?php echo $message_data[4]['msg']?></li>
-        <li><?php echo $message_data[3]['msg']?></li>
-        <li><?php echo $message_data[2]['msg']?></li>
-        <li><?php echo $message_data[1]['msg']?></li>
-        <li><?php echo $message_data[0]['msg']?></li>
+        <li><?php echo $message_data[4]['user_name'].": ";echo $message_data[4]['msg']?></li>
+        <li><?php echo $message_data[3]['user_name'].": ";echo $message_data[4]['msg']?></li>
+        <li><?php echo $message_data[2]['user_name'].": ";echo $message_data[4]['msg']?></li>
+        <li><?php echo $message_data[1]['user_name'].": ";echo $message_data[4]['msg']?></li>
+        <li><?php echo $message_data[0]['user_name'].": ";echo $message_data[4]['msg']?></li>
     </ul>
 </body>
 </html>
