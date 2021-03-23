@@ -67,8 +67,6 @@ session_start();
             font-family:'Questrial', sans-serif;
             letter-spacing: 3px;
             font-size:1.5vw;
-            padding: 10px;
-            width: 100px;
             color: black;
             background-color: hotpink;
             border: none;
@@ -76,6 +74,7 @@ session_start();
     </style>
 </head>
 <body>
+<button class="button">back to Homepage</button>
 <div class="div1">
     <h1 class="text">Chat</h1>
     <script src="js/maxtest.js"></script>
@@ -101,6 +100,5 @@ session_start();
         <li class="text"><?php echo $message_data[0]['user_name'].": ";echo $message_data[0]['msg']?></li>
     </ul>
     </div>
-    <button class="button">back to Homepage</button>
 </body>
 </html>
