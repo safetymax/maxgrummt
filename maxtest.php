@@ -78,7 +78,7 @@ session_start();
 </head>
 <body>
 <div class="div1">
-    <div class="div2">
+    
     <h1 class="text">Chat</h1>
     <script src="js/maxtest.js"></script>
     <form method="post">
