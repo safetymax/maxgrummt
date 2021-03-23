@@ -74,7 +74,7 @@ session_start();
     </style>
 </head>
 <body>
-<button class="button" onclick="click()">back to Homepage</button>
+<button class="button" onclick="mclick()">back to Homepage</button>
 <div class="div1">
     <h1 class="text">Chat</h1>
     <form method="post">
@@ -100,8 +100,8 @@ session_start();
     </ul>
     </div>
     <script>
-    function click(){
-        let i = <?php header("Location: index.php"); ?>
+    function mclick(){
+        document.location.href = "index.php"
     }
     </script>
 </body>
