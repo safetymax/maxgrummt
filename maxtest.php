@@ -101,7 +101,7 @@ session_start();
     </div>
     <script>
     function click(){
-        <?php header("Location: index.php"); ?>
+        let i = <?php header("Location: index.php"); ?>
     }
     </script>
 </body>
