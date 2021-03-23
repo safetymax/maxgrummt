@@ -79,7 +79,7 @@ session_start();
 <div class="box">
 
 <form method="post">
-<div style="font-size: 20px; margin: 10px; color: black;">Signup</div>
+<div style="font-size: 20px; margin: 10px; color: black;">Signup NOT WORKING AT THE MOMENT</div>
 <input class="text" type="text" name="user_name"><br><br>
 <input class="text" type="password" name="password"><br><br>
 
