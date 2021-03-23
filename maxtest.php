@@ -37,7 +37,7 @@ session_start();
             display: block;
             z-index: 99;
             left:0%;
-            top: 40%;
+            top: 0%;
         }
         ul{
             list-style-type: none;
@@ -52,7 +52,6 @@ session_start();
         <div style="font-size: 20px; margin: 10px; color: black;">Send Message</div>
             <input class="text" type="text" name="message"><br><br>
             <input class="button" type="submit" value="Send">
-        
     </form>
     <ul>
         <li><?php echo $message_data[4]['user_name'].": ";echo $message_data[4]['msg']?></li>
