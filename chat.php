@@ -8,7 +8,7 @@ session_start();
 
     $user_data = check_login($con);
 
-    $message_data = get_messages($con, 5);
+    $message_data = get_messages($con, 15);
 
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
