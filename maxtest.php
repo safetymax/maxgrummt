@@ -38,26 +38,47 @@ session_start();
             z-index: 99;
             left:0%;
             top: 0%;
+
+            background-color: lightgrey;
+            margin: auto;
+            width: 300px;
+            padding: 20px;
         }
         ul{
             list-style-type: none;
+        }
+        .text {
+            font-family:'Questrial', sans-serif;
+            letter-spacing: 3px;
+            font-size:2.5vw;
+
+            border: none;
+            background: none;
+            color: rgb(246, 100, 222);
+        }
+        .button{
+            padding: 10px;
+            width: 100px;
+            color: black;
+            background-color: hotpink;
+            border: none;
         }
     </style>
 </head>
 <body>
 <div class="div1">
-    <h1>Chat</h1>
+    <h1 class="text">Chat</h1>
     <script src="js/maxtest.js"></script>
     <form method="post">
             <input class="text" type="text" name="message"><br><br>
             <input class="button" type="submit" value="Send">
     </form>
     <ul>
-        <li><?php echo $message_data[4]['user_name'].": ";echo $message_data[4]['msg']?></li>
-        <li><?php echo $message_data[3]['user_name'].": ";echo $message_data[3]['msg']?></li>
-        <li><?php echo $message_data[2]['user_name'].": ";echo $message_data[2]['msg']?></li>
-        <li><?php echo $message_data[1]['user_name'].": ";echo $message_data[1]['msg']?></li>
-        <li><?php echo $message_data[0]['user_name'].": ";echo $message_data[0]['msg']?></li>
+        <li class="text"><?php echo $message_data[4]['user_name'].": ";echo $message_data[4]['msg']?></li>
+        <li class="text"><?php echo $message_data[3]['user_name'].": ";echo $message_data[3]['msg']?></li>
+        <li class="text"><?php echo $message_data[2]['user_name'].": ";echo $message_data[2]['msg']?></li>
+        <li class="text"><?php echo $message_data[1]['user_name'].": ";echo $message_data[1]['msg']?></li>
+        <li class="text"><?php echo $message_data[0]['user_name'].": ";echo $message_data[0]['msg']?></li>
     </ul>
     </div>
 </body>
