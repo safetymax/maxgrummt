@@ -26,10 +26,9 @@ session_start();
             //save to database
             $user_id = random_num(20);
             $query = "insert into users (user_id,user_name,password) values ('$user_id','$user_name','$password')";
-            //echo "valid";
-            //mysqli_query($con, $query);
+            mysqli_query($con, $query);
 
-            //header("Location: login.php");
+            header("Location: login.php");
             die;
             }
         }
@@ -80,7 +79,8 @@ session_start();
 <div class="box">
 
 <form method="post">
-<div style="font-size: 20px; margin: 10px; color: black;">Signup NOT WORKING AT THE MOMENT</div>
+<div style="font-size: 20px; margin: 10px; color: black;">Signup</div><br><br>
+<div style="font-size: 15px; margin: 10px; color: black;">working again, but all accounts had to be reset</div>
 <input class="text" type="text" name="user_name"><br><br>
 <input class="text" type="password" name="password"><br><br>
 
