@@ -84,7 +84,7 @@ function send_message($con, $user_data, $msg){
         $query = "insert into messages (outgoing_msg_id, msg) values ('$user_id','$msg')";
         mysqli_query($con, $query);
     }
-    header("Location: maxtest.php");
+    header("Location: chat.php");
     return;
     die;
 }
