@@ -219,7 +219,7 @@ session_start();
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s "+"\nUNTIL NEW UPDATE";
+        + minutes + "m " + seconds + "s "+"-- UNTIL NEW UPDATE";
 
         if (distance < 0) {
             clearInterval(x);
