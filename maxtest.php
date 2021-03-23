@@ -74,10 +74,9 @@ session_start();
     </style>
 </head>
 <body>
-<button class="button" href="index.php">back to Homepage</button>
+<button class="button" onclick="click()">back to Homepage</button>
 <div class="div1">
     <h1 class="text">Chat</h1>
-    <script src="js/maxtest.js"></script>
     <form method="post">
             <input class="textinput" type="text" name="message"><br><br>
             <input class="button" type="submit" value="Send">
@@ -100,5 +99,10 @@ session_start();
         <li class="text"><?php echo $message_data[0]['user_name'].": ";echo $message_data[0]['msg']?></li>
     </ul>
     </div>
+    <script>
+    function click(){
+        document.location.href = "index.php";
+    }
+    </script>
 </body>
 </html>
