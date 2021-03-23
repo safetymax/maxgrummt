@@ -66,13 +66,15 @@ function get_messages($con){
             echo $message_data;
         }
         for($i = 0;$i<mysqli_num_rows($message_data);$i++){
-            $query = "select * from users a join messages b on a.user_id = b.outgoing_msg_id where b.id = '$i' limit 1";
-            $result = mysqli_query($con, $query);
+            $new_query = "select * from users a join messages b on a.user_id = b.outgoing_msg_id where b.id = '$i' limit 1";
+            $new_result = mysqli_query($con, $query);
 
-            if($result && mysqli_num_rows($result) == 1){
-                $new_message_data = mysqli_fetch_assoc($result);
-    
-                echo $new_message_data['user_id'][0];
+            if($new_result && mysqli_num_rows($new_result) == 1){
+                $new_message_data = mysqli_fetch_assoc($new_result);
+                
+                $output = $new_message_data['user_id'][0]
+
+                echo $output;
             }
         }
         return "A";
