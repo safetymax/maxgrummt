@@ -56,3 +56,13 @@ function random_num($length)
     }
     return $text;
 }
+
+function get_messages($con){
+    $query = "select * from users a join messages b on a.user_id = b.outgoing_msg_id";
+    $result = mysqli_query($con, $query);
+    if($result && mysqli_num_rows($result) > 0){
+        $message_data = mysqli_fetch_assoc($result);
+
+        return $message_data;
+    }
+}

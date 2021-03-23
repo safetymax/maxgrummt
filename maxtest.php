@@ -8,7 +8,7 @@ session_start();
 
     $user_data = check_loginplus($con);
 
-    $TEST = 1234;
+    $message_data = getMessages($con);
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +21,11 @@ session_start();
 </head>
 <body>
     <h1>Test</h1>
-    <p><?php echo $TEST; ?></p>
+    <p><?php 
+        for($i = 0;$i<mysqli_num_rows($message_data);$i++){
+            echo $message_data['message'];
+        }
+    ?></p>
     <script src="js/maxtest.js"></script>
 </body>
 </html>
