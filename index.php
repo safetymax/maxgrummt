@@ -172,7 +172,7 @@ session_start();
         }
 
         console.log(<?php echo isset($_SESSION['user_id']);?>);
-        if(<?php echo isset($_SESSION['user_id']);?> == true){
+        if(<?php echo isset($_SESSION['user_id']);?>){
             var newElement = document.createElement("button");
             newElement.innerHTML = "Logout";
             newElement.className = "log";
