@@ -80,7 +80,7 @@ function get_messages($con, $amount){
 
 function send_message($con, $user_data, $msg){
     if($msg){
-        if(isset($_SESSION['user_id']))
+        /*if(isset($_SESSION['user_id']))
         {
             $id = $_SESSION['user_id'];
             $query = "select * from users where user_id = '$id' limit 1";
@@ -89,7 +89,7 @@ function send_message($con, $user_data, $msg){
             {
                 $user_data = mysqli_fetch_assoc($result);
             }
-        }
+        }*/
         $user_id = $user_data['user_id'];
         $query = "insert into messages (outgoing_msg_id, msg) values ('$user_id','$msg')";
         mysqli_query($con, $query);
