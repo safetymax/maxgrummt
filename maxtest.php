@@ -21,7 +21,6 @@ session_start();
 </head>
 <body>
     <h1>Test</h1>
-    <p><?php $output = $message_data['message']; echo "'$output'"; ?></p>
     <script src="js/maxtest.js"></script>
 </body>
 </html>
