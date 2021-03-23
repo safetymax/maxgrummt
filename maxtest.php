@@ -22,9 +22,8 @@ session_start();
 <body>
     <h1>Test</h1>
     <p><?php 
-        for($i = 0;$i<mysqli_num_rows($message_data);$i++){
-            echo $message_data['message'];
-        }
+            $output = $message_data['message'];
+            echo "'$output'";
     ?></p>
     <script src="js/maxtest.js"></script>
 </body>
