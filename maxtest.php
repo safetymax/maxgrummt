@@ -45,7 +45,7 @@ session_start();
             background-color: lightgrey;
             margin: auto;
             width: 10vw;
-            padding: 20px;
+            padding: 10vw;
         }
         ul{
             list-style-type: none;
