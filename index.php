@@ -5,8 +5,6 @@ session_start();
 
     include("connection.php");
     include("functions.php");
-
-    $user_data = check_login($con);
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +27,7 @@ session_start();
             width: 100%;
             height: 100%;
         }
-        div{
+        .div1{
             height: max-content;
             width:100vw;
             background: none;
@@ -111,7 +109,7 @@ session_start();
     <script src="js/perlin.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.js"></script>
     <script src="js/index.js"></script> 
-    <div>
+    <div class="div1">
     <button class="header" onclick="myclick()">Maximilian Grummt</button>
     <p class="text">NEW UPDATE SOON</p>
     </div>
