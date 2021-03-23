@@ -47,7 +47,12 @@ session_start();
             width:45vw;
             background: lightgrey;
             line-height:normal;
-            text-align: center;
+
+            position: relative;
+            display: block;
+            z-index: 99;
+            left:0%;
+            top: 0%;
         }
         ul{
             list-style-type: none;
