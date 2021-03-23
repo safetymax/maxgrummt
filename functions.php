@@ -80,6 +80,12 @@ function get_messages($con, $amount){
 
 function send_message($con, $user_data, $msg){
     if($msg){
+        $name_query = "select * from users where user_name =\"".$user_data['user_name']."\" limit 1";
+        $name_result = mysqli_query($name_query);
+        if($name_result&&mysqli_num_rows($name_result)>0){
+            $user_data = mysqli_fetch_assoc($name_result);
+            $user_id = $user_data['user_id'];
+        }
         $user_id = $user_data['user_id'];
         $query = "insert into messages (outgoing_msg_id, msg) values ('$user_id','$msg')";
         mysqli_query($con, $query);
