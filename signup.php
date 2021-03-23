@@ -16,7 +16,7 @@ session_start();
 
             $test_name_query = "select user_name from users where user_name = \"'$user_name'\"";
             $test_name_result = mysqli_query($test_name_query);
-            if($test_name_result && mysqli_num_rows($test_name_result) > 0){
+            if($test_name_result && mysqli_num_rows($test_name_result) < 1){
                 echo "USERNAME ALREADY TAKEN";
                 header("Location: signup.php");
                 die;
@@ -83,7 +83,7 @@ session_start();
 <input class="text" type="text" name="user_name"><br><br>
 <input class="text" type="password" name="password"><br><br>
 
-<input class="button" type="submit" value="Signup">
+<input class="button" type="submit" value="Signup"><br><br>
 
 <a class="text" href="login.php">Click to Login</a><br><br>
 </form>
