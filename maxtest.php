@@ -49,7 +49,6 @@ session_start();
     <h1>Chat</h1>
     <script src="js/maxtest.js"></script>
     <form method="post">
-        <div style="font-size: 20px; margin: 10px; color: black;">Send Message</div>
             <input class="text" type="text" name="message"><br><br>
             <input class="button" type="submit" value="Send">
     </form>
