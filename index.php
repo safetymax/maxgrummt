@@ -120,7 +120,7 @@ session_start();
             position: absolute;
             display: block;
             z-index: 99;
-            left: 19vw;
+            left: 17vw;
             top: 1%;
         }
     </style>
@@ -135,7 +135,7 @@ session_start();
     </div>
     <button class="about" onclick="aboutclick()">About</button>
     <button class="blog" onclick="blogclick()">Blog</button>
-    <button class="chat" onclick="chatclick()">About</button>
+    <button class="chat" onclick="chatclick()">Chat</button>
 
     <script>
         function myclick(){
