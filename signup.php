@@ -16,10 +16,10 @@ session_start();
 
             $test_name_query = "select user_name from users where user_name = \"'$user_name'\"";
             $test_name_result = mysqli_query($test_name_query);
-            if(mysqli_num_rows($test_name_result) > 0){
+            if($test_name_result){
                 echo "AAA";
             }
-            else if(mysqli_num_rows($test_name_result) < 1){
+            else if(mysqli_num_rows($test_name_result) >0 ){
                 echo "BBB";
             }
             if($test_name_result && mysqli_num_rows($test_name_result) > 0){
