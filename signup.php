@@ -14,7 +14,7 @@ session_start();
         {
             $password = password_hash($password, PASSWORD_DEFAULT);
 
-            $test_name_query = "select user_name from users where user_name = '$user_name'";
+            $test_name_query = "select user_name from users where user_name = \"'$user_name'\"";
             $test_name_result = mysqli_query($test_name_query);
             if($test_name_result && mysqli_num_rows($test_name_result) > 0){
                 echo "USERNAME ALREADY TAKEN";
