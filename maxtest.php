@@ -22,7 +22,7 @@ session_start();
 <body>
     <h1>Test</h1>
     <script src="js/maxtest.js"></script>
-    <p><?php echo $message_data[0]; ?></p>
-    <p><?php echo $message_data[1]; ?></p>
+    <p><?php echo $message_data[0]['msg']; ?></p>
+    <p><?php echo $message_data[1]['msg']; ?></p>
 </body>
 </html>
