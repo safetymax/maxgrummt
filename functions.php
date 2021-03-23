@@ -58,15 +58,22 @@ function random_num($length)
 }
 
 function get_messages($con){
-    for($i = 0;$i<2:$i++){
-        $query = "select * from users a join messages b on a.user_id = b.outgoing_msg_id where b.id = '$i'";
+        $query = "select * from users a join messages b on a.user_id = b.outgoing_msg_id";
         $result = mysqli_query($con, $query);
         if($result && mysqli_num_rows($result) > 0){
             $message_data = mysqli_fetch_assoc($result);
 
             echo $message_data;
-            //return $message_data;
         }
-    }
-    return 1;
+        for($i = 0;$i<mysqli_num_rows($message_data);$i++){
+            $query = "select * from users a join messages b on a.user_id = b.outgoing_msg_id where b.id = '$i'";
+            $result = mysqli_query($con, $query);
+
+            if($result && mysqli_num_rows($result) > 0){
+                $message_data = mysqli_fetch_assoc($result);
+    
+                echo $message_data;
+            }
+        }
+        return "A";
 }
