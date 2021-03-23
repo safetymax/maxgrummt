@@ -36,8 +36,7 @@ function check_loginplus($con)
     }
 
     //redirect to login
-    echo $_SESSION['user_id'];
-    //header("Location: login.php");
+    header("Location: login.php");
     die;
 }
 
