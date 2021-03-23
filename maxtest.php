@@ -44,7 +44,7 @@ session_start();
 
             background-color: lightgrey;
             margin: auto;
-            width: 300px;
+            width: 10vw;
             padding: 20px;
         }
         ul{
@@ -53,7 +53,7 @@ session_start();
         .text {
             font-family:'Questrial', sans-serif;
             letter-spacing: 3px;
-            font-size:2.5vw;
+            font-size:1.5vw;
 
             border: none;
             background: none;
