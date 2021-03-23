@@ -101,7 +101,7 @@ session_start();
     </div>
     <script>
     function mclick(){
-        document.location.href = "index.php"
+        document.location.href = "index.php";
     }
     </script>
 </body>
