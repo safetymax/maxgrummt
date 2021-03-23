@@ -172,7 +172,7 @@ session_start();
         }
 
         if(<?php echo isset($_SESSION);?> == true){
-            var newElement = document.createElement("p");
+            var newElement = document.createElement("button");
             newElement.innerHTML = "Logout";
             newElement.className = "log";
             newElement.onclick = function(){
@@ -181,7 +181,7 @@ session_start();
             document.getElementById("ID").appendChild(newElement);
         }
         else{
-            var newElement = document.createElement("p");
+            var newElement = document.createElement("button");
             newElement.innerHTML = "Login";
             newElement.className = "log";
             newElement.onclick = function(){
