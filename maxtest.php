@@ -35,10 +35,10 @@ session_start();
     </form>
     <ul>
         <li><?php echo $message_data[4]['user_name'].": ";echo $message_data[4]['msg']?></li>
-        <li><?php echo $message_data[3]['user_name'].": ";echo $message_data[4]['msg']?></li>
-        <li><?php echo $message_data[2]['user_name'].": ";echo $message_data[4]['msg']?></li>
-        <li><?php echo $message_data[1]['user_name'].": ";echo $message_data[4]['msg']?></li>
-        <li><?php echo $message_data[0]['user_name'].": ";echo $message_data[4]['msg']?></li>
+        <li><?php echo $message_data[3]['user_name'].": ";echo $message_data[3]['msg']?></li>
+        <li><?php echo $message_data[2]['user_name'].": ";echo $message_data[2]['msg']?></li>
+        <li><?php echo $message_data[1]['user_name'].": ";echo $message_data[1]['msg']?></li>
+        <li><?php echo $message_data[0]['user_name'].": ";echo $message_data[0]['msg']?></li>
     </ul>
 </body>
 </html>
