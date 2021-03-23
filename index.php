@@ -103,6 +103,26 @@ session_start();
             left: 10vw;
             top: 1%;
         }
+        .chat{
+            outline: 1px;
+            outline-width: 1px;
+            outline-style: solid;
+            outline-color: rgb(192, 192, 192);
+
+            font-family:'Questrial', sans-serif;
+            letter-spacing: 0.1vw;
+            font-size: 2vw;
+            color: rgb(246, 100, 222);
+
+            border: none;
+            background: none;
+
+            position: absolute;
+            display: block;
+            z-index: 99;
+            left: 19vw;
+            top: 1%;
+        }
     </style>
 </head>
 <body> 
@@ -115,6 +135,7 @@ session_start();
     </div>
     <button class="about" onclick="aboutclick()">About</button>
     <button class="blog" onclick="blogclick()">Blog</button>
+    <button class="chat" onclick="chatclick()">About</button>
 
     <script>
         function myclick(){
@@ -125,6 +146,9 @@ session_start();
         }
         function blogclick(){
             
+        }
+        function chatclick(){
+            document.location.href = "chat.php";
         }
 
         window.addEventListener('resize', onWindowResize);
