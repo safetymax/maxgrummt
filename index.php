@@ -56,6 +56,15 @@ session_start();
             background: none;
             color: rgb(246, 100, 222);
         }
+        .text {
+            font-family:'Questrial', sans-serif;
+            letter-spacing: 3px;
+            font-size:3vw;
+
+            border: none;
+            background: none;
+            color: rgb(246, 100, 222);
+        }
         .about{
             outline: 1px;
             outline-width: 1px;
@@ -104,6 +113,7 @@ session_start();
     <script src="js/index.js"></script> 
     <div>
     <button class="header" onclick="myclick()">Maximilian Grummt</button>
+    <p class="text">NEW UPDATE SOON</p>
     </div>
     <button class="about" onclick="aboutclick()">About</button>
     <button class="blog" onclick="blogclick()">Blog</button>
