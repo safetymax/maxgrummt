@@ -151,7 +151,7 @@ session_start();
     <script src="js/index.js"></script> 
     <div class="div1">
     <button class="header" onclick="myclick()">Maximilian Grummt</button>
-    <p class="text" id="timer">CHAT OUT NOW</p>
+    <p class="text" id="timer"></p>
     </div>
     <button class="about" onclick="aboutclick()">About</button>
     <button class="blog" onclick="blogclick()">Blog</button>
@@ -219,7 +219,7 @@ session_start();
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
+        + minutes + "m " + seconds + "s "+"UNTIL NEW UPDATE";
 
         if (distance < 0) {
             clearInterval(x);
