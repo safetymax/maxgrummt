@@ -39,7 +39,7 @@ session_start();
             position: absolute;
             display: block;
             z-index: 99;
-            left:0vw;
+            left:15vw;
             top: 0%;
         }
         ul{
