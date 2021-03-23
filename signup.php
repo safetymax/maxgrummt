@@ -12,6 +12,13 @@ session_start();
 
         if(!empty($user_name) && !empty($password))
         {
+            $test_name_query = "select user_name from users where user_name = '$user_name'";
+            $test_name_result = mysqli_query($test_name_query);
+            if($test_name_result&&mysqli_num_rows($test_name_query)>0){
+                echo "USERNAME ALREADY TAKEN"
+                die;
+            }
+            else{
             //save to database
             $user_id = random_num(20);
             $query = "insert into users (user_id,user_name,password) values ('$user_id','$user_name','$password')";
@@ -20,6 +27,7 @@ session_start();
 
             header("Location: login.php");
             die;
+            }
         }
         else
         {
