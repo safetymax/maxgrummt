@@ -8,13 +8,15 @@ session_start();
     {
         //something was posted
         $user_name = $_POST['user_name'];
-        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        $password = $_POST['password'];
 
         if(!empty($user_name) && !empty($password))
         {
+            $password = password_hash($password, PASSWORD_DEFAULT);
+
             $test_name_query = "select user_name from users where user_name = \"'$user_name'\"";
             $test_name_result = mysqli_query($test_name_query);
-            echo $test_name_result;
+            echo $test_name_query;
             if($test_name_result && mysqli_num_rows($test_name_query)>0){
                 echo "USERNAME ALREADY TAKEN";
                 //header("Location: signup.php");
@@ -24,7 +26,7 @@ session_start();
             //save to database
             $user_id = random_num(20);
             $query = "insert into users (user_id,user_name,password) values ('$user_id','$user_name','$password')";
-            echo "valid";
+            //echo "valid";
             //mysqli_query($con, $query);
 
             //header("Location: login.php");
