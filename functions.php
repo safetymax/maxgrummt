@@ -68,5 +68,5 @@ function get_messages($con){
             //return $message_data;
         }
     }
-    die;
+    return 1;
 }
