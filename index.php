@@ -123,7 +123,7 @@ session_start();
             left: 17vw;
             top: 1%;
         }
-        .logout{
+        .log{
             outline: 1px;
             outline-width: 1px;
             outline-style: solid;
@@ -174,7 +174,19 @@ session_start();
         if(<?php echo isset($_SESSION);?>){
             var newElement = document.createElement("p");
             newElement.innerHTML = "Logout";
-            newElement.className = "logout";
+            newElement.className = "log";
+            newElement.onclick = function(){
+                document.location.href = "logout.php";
+            }
+            document.getElementById("ID").appendChild(newElement);
+        }
+        else{
+            var newElement = document.createElement("p");
+            newElement.innerHTML = "Login";
+            newElement.className = "log";
+            newElement.onclick = function(){
+                document.location.href = "login.php";
+            }
             document.getElementById("ID").appendChild(newElement);
         }
 
