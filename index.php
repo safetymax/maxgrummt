@@ -171,7 +171,7 @@ session_start();
             document.location.href = "chat.php";
         }
 
-        if(<?php echo isset($_SESSION);?>){
+        if(<?php echo isset($_SESSION);?> == true){
             var newElement = document.createElement("p");
             newElement.innerHTML = "Logout";
             newElement.className = "log";
