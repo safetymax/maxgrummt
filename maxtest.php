@@ -31,8 +31,8 @@ session_start();
         <div style="font-size: 20px; margin: 10px; color: black;">Signup</div>
             <input class="text" type="text" name="message"><br><br>
             <input class="button" type="submit" value="Send">
-            </div>
-        </form>
+        </div>
+    </form>
     <ul>
         <li><?php echo $message_data[4]['msg']?></li>
         <li><?php echo $message_data[3]['msg']?></li>
