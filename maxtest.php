@@ -8,7 +8,7 @@ session_start();
 
     $user_data = check_loginplus($con);
 
-    $message_data = getMessages($con);
+    $message_data = get_messages($con);
 ?>
 
 <!DOCTYPE html>
