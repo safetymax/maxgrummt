@@ -70,7 +70,7 @@ function get_messages($con){
             if($new_result && mysqli_num_rows($new_result) == 1){
                 $new_message_data = mysqli_fetch_assoc($new_result);
                 
-                $output = $new_message_data['id'];
+                $output = $new_message_data['msg'];
 
                 return $output;
             }
