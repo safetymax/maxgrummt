@@ -31,6 +31,19 @@ session_start();
         }
         .div1{
             height: max-content;
+            width:100vw;
+            background: none;
+            line-height:normal;
+            text-align: center;
+
+            position: absolute;
+            display: block;
+            z-index: 99;
+            left:0%;
+            top: 0%;
+        }
+        .div2{
+            height: max-content;
             width:45vw;
             background: lightgrey;
             line-height:normal;
@@ -65,6 +78,7 @@ session_start();
 </head>
 <body>
 <div class="div1">
+    <div class="div2">
     <h1 class="text">Chat</h1>
     <script src="js/maxtest.js"></script>
     <form method="post">
