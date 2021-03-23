@@ -52,7 +52,7 @@ session_start();
         <div style="font-size: 20px; margin: 10px; color: black;">Send Message</div>
             <input class="text" type="text" name="message"><br><br>
             <input class="button" type="submit" value="Send">
-        </div>
+        
     </form>
     <ul>
         <li><?php echo $message_data[4]['user_name'].": ";echo $message_data[4]['msg']?></li>
