@@ -175,7 +175,7 @@ session_start();
             var newElement = document.createElement("p");
             newElement.innerHTML = "Logout";
             newElement.style = "logout";
-            document.getElementById("ID").appendChild(newElement);
+            document.appendChild(newElement);
         }
 
         window.addEventListener('resize', onWindowResize);
