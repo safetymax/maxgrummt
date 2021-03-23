@@ -31,7 +31,7 @@ session_start();
         }
         .div1{
             height: max-content;
-            width:100vw;
+            width:70vw;
             background: none;
             line-height:normal;
             text-align: center;
@@ -39,7 +39,7 @@ session_start();
             position: absolute;
             display: block;
             z-index: 99;
-            left:0%;
+            left:30vw;
             top: 0%;
         }
         ul{
