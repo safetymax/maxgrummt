@@ -81,6 +81,16 @@ session_start();
             <input class="button" type="submit" value="Send">
     </form>
     <ul>
+        <li class="text"><?php echo $message_data[14]['user_name'].": ";echo $message_data[14]['msg']?></li>
+        <li class="text"><?php echo $message_data[13]['user_name'].": ";echo $message_data[13]['msg']?></li>
+        <li class="text"><?php echo $message_data[12]['user_name'].": ";echo $message_data[12]['msg']?></li>
+        <li class="text"><?php echo $message_data[11]['user_name'].": ";echo $message_data[11]['msg']?></li>
+        <li class="text"><?php echo $message_data[10]['user_name'].": ";echo $message_data[10]['msg']?></li>
+        <li class="text"><?php echo $message_data[9]['user_name'].": ";echo $message_data[9]['msg']?></li>
+        <li class="text"><?php echo $message_data[8]['user_name'].": ";echo $message_data[8]['msg']?></li>
+        <li class="text"><?php echo $message_data[7]['user_name'].": ";echo $message_data[7]['msg']?></li>
+        <li class="text"><?php echo $message_data[6]['user_name'].": ";echo $message_data[6]['msg']?></li>
+        <li class="text"><?php echo $message_data[5]['user_name'].": ";echo $message_data[5]['msg']?></li>
         <li class="text"><?php echo $message_data[4]['user_name'].": ";echo $message_data[4]['msg']?></li>
         <li class="text"><?php echo $message_data[3]['user_name'].": ";echo $message_data[3]['msg']?></li>
         <li class="text"><?php echo $message_data[2]['user_name'].": ";echo $message_data[2]['msg']?></li>
