@@ -62,18 +62,18 @@ function get_messages($con){
         $result = mysqli_query($con, $query);
         if($result && mysqli_num_rows($result) > 0){
             $message_data = mysqli_fetch_assoc($result);
+            $output = "3";
         }
         for($i = 0;$i<mysqli_num_rows($message_data);$i++){
             $new_query = "select * from users a join messages b on a.user_id = b.outgoing_msg_id where b.id = '$i' limit 1";
             $new_result = mysqli_query($con, $query);
+            $output = "2";
 
             if($new_result && mysqli_num_rows($new_result) > 0){
                 $new_message_data = mysqli_fetch_assoc($new_result);
                 
-                $output = "AAAAAAA";
-
-
-                return $output;
+                $output = "1";
             }
         }
+        return $output;
 }
