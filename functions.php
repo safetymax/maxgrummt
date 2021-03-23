@@ -79,7 +79,7 @@ function get_messages($con, $amount){
 
 function send_message($con, $user_data, $msg){
     $user_id = $user_data['user_id'];
-    $query = "insert into messages (outgoing_msg_id, msg) values ('$user_id','$msg')"
+    $query = "insert into messages (outgoing_msg_id, msg) values ('$user_id','$msg')";
     mysqli_query($con, $query);
     die;
 }
