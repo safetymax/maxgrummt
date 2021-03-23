@@ -92,5 +92,6 @@ session_start();
         <li class="text"><?php echo $message_data[0]['user_name'].": ";echo $message_data[0]['msg']?></li>
     </ul>
     </div>
+    </div>
 </body>
 </html>
