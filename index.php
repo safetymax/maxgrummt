@@ -171,6 +171,7 @@ session_start();
             document.location.href = "chat.php";
         }
 
+        console.log(<?php echo isset($_SESSION['user_id']);?>);
         if(<?php echo isset($_SESSION['user_id']);?> == true){
             var newElement = document.createElement("button");
             newElement.innerHTML = "Logout";
