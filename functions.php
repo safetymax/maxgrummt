@@ -71,7 +71,7 @@ function get_messages($con, $amount){
 
             echo $i;
             $new_message_data = mysqli_fetch_assoc($new_result);
-            $output[$i]=$new_message_data;
+            $output.append($new_message_data);
         }
         return $output;
         die;
