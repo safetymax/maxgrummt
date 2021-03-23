@@ -31,7 +31,7 @@ session_start();
         }
         .div1{
             height: max-content;
-            width:100vw;
+            width:45vw;
             background: lightgrey;
             line-height:normal;
             text-align: center;
