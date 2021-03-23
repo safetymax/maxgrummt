@@ -82,6 +82,7 @@
 
 <form method="post">
 <div style="font-size: 20px; margin: 10px; black: white;">Login</div>
+<div style="font-size: 15px; margin: 10px; color: black;">Signup working again, but all accounts had to be reset</div>
 <input class="text" type="text" name="user_name"><br><br>
 <input class="text" type="password" name="password"><br><br>
 
