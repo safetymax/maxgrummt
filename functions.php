@@ -80,9 +80,9 @@ function get_messages($con, $amount){
 
 function send_message($con, $user_data, $msg){
     if($msg){
-        /*if(isset($_SESSION['user_id']))
+        if(isset($user_data['user_id']))
         {
-            $id = $_SESSION['user_id'];
+            $id = $user_data['user_id'];
             $query = "select * from users where user_id = '$id' limit 1";
             $result = mysqli_query($con,$query);
             if($result && mysqli_num_rows($result) > 0)
