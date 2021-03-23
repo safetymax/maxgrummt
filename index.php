@@ -141,7 +141,7 @@ session_start();
             display: block;
             z-index: 99;
             left: 24vw;
-            top: 0%;
+            top: -2%;
         }
     </style>
 </head>
