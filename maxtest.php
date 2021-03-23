@@ -74,7 +74,7 @@ session_start();
     </style>
 </head>
 <body>
-<button class="button">back to Homepage</button>
+<button class="button" href="index.php">back to Homepage</button>
 <div class="div1">
     <h1 class="text">Chat</h1>
     <script src="js/maxtest.js"></script>
