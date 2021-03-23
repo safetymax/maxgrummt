@@ -123,6 +123,26 @@ session_start();
             left: 17vw;
             top: 1%;
         }
+        .logout{
+            outline: 1px;
+            outline-width: 1px;
+            outline-style: solid;
+            outline-color: rgb(192, 192, 192);
+
+            font-family:'Questrial', sans-serif;
+            letter-spacing: 0.1vw;
+            font-size: 2vw;
+            color: rgb(246, 100, 222);
+
+            border: none;
+            background: none;
+
+            position: absolute;
+            display: block;
+            z-index: 99;
+            left: 24vw;
+            top: 1%;
+        }
     </style>
 </head>
 <body> 
@@ -131,7 +151,7 @@ session_start();
     <script src="js/index.js"></script> 
     <div class="div1">
     <button class="header" onclick="myclick()">Maximilian Grummt</button>
-    <p class="text">NEW UPDATE SOON</p>
+    <p class="text">CHAT OUT NOW</p>
     </div>
     <button class="about" onclick="aboutclick()">About</button>
     <button class="blog" onclick="blogclick()">Blog</button>
@@ -149,6 +169,13 @@ session_start();
         }
         function chatclick(){
             document.location.href = "chat.php";
+        }
+
+        if(<?php echo isset($_SESSION);?>){
+            var newElement = document.createElement("p");
+            newElement.innerHTML = "Logout";
+            newElement.style = "logout";
+            document.getElementById("ID").appendChild(newElement);
         }
 
         window.addEventListener('resize', onWindowResize);
