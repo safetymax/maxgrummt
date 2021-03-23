@@ -32,7 +32,7 @@ session_start();
         .div1{
             height: max-content;
             width:100vw;
-            background: none;
+            background: lightgrey;
             line-height:normal;
             text-align: center;
 
@@ -41,11 +41,6 @@ session_start();
             z-index: 99;
             left:0%;
             top: 0%;
-
-            background-color: lightgrey;
-            margin: auto;
-            width: 10vw;
-            padding: 10vw;
         }
         ul{
             list-style-type: none;
