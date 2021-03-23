@@ -59,7 +59,7 @@ session_start();
         .text {
             font-family:'Questrial', sans-serif;
             letter-spacing: 3px;
-            font-size:3vw;
+            font-size:2.5vw;
 
             border: none;
             background: none;
