@@ -103,6 +103,10 @@ session_start();
     function mclick(){
         document.location.href = "index.php";
     }
+
+    var x = setInterval(function() {
+        <?php $message_data = get_messages($con, 15);>
+    }, 1000);
     </script>
 </body>
 </html>
