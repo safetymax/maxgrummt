@@ -64,6 +64,9 @@ session_start();
             color: rgb(246, 100, 222);
         }
         .button{
+            font-family:'Questrial', sans-serif;
+            letter-spacing: 3px;
+            font-size:1.5vw;
             padding: 10px;
             width: 100px;
             color: black;
