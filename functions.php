@@ -78,7 +78,7 @@ function get_messages($con, $amount){
         die;
 }
 
-function send_message($con, $msg){
+function send_message($con, $user_data, $msg){
     if($msg){
         $user_id = $_SESSION['user_id'];
         $query = "insert into messages (outgoing_msg_id, msg) values ('$user_id','$msg')";
