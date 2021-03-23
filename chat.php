@@ -106,7 +106,7 @@ session_start();
 
     var x = setInterval(function() {
         document.location.href = "chat.php";
-    }, 1000);
+    }, 15000);
     </script>
 </body>
 </html>
