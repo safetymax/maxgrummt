@@ -7,6 +7,8 @@ session_start();
     include("functions.php");
 
     $user_data = check_loginplus($con);
+
+    $TEST = 1234;
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +21,7 @@ session_start();
 </head>
 <body>
     <h1>Test</h1>
+    <p><?php echo $TEST; ?></p>
     <script src="js/maxtest.js"></script>
 </body>
 </html>

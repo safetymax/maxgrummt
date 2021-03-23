@@ -72,7 +72,7 @@ session_start();
 <input class="text" type="text" name="user_name"><br><br>
 <input class="text" type="password" name="password"><br><br>
 
-<input class="button" type="submit" value="Login">
+<input class="button" type="submit" value="Signup">
 
 <a class="text" href="login.php">Click to Login</a><br><br>
 </form>
