@@ -12,7 +12,7 @@ session_start();
 
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
-        send_message($con, $_SESSION);
+        send_message($con, $_SESSION, $_POST['message']);
     }
 ?>
 
@@ -29,10 +29,10 @@ session_start();
     <script src="js/maxtest.js"></script>
     <form method="post">
         <div style="font-size: 20px; margin: 10px; color: black;">Signup</div>
-            <input class="text" type="text" name="user_name"><br><br>
+            <input class="text" type="text" name="message"><br><br>
             <input class="button" type="submit" value="Send">
+            </div>
         </form>
-    </div>
     <ul>
         <li><?php echo $message_data[4]['msg']?></li>
         <li><?php echo $message_data[3]['msg']?></li>
