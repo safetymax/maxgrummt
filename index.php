@@ -145,7 +145,7 @@ session_start();
         }
     </style>
 </head>
-<body> 
+<body id="ID"> 
     <script src="js/perlin.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.js"></script>
     <script src="js/index.js"></script> 
@@ -175,7 +175,7 @@ session_start();
             var newElement = document.createElement("p");
             newElement.innerHTML = "Logout";
             newElement.style = "logout";
-            document.getRootNode.appendChild(newElement);
+            document.getElementById("ID").appendChild(newElement);
         }
 
         window.addEventListener('resize', onWindowResize);
