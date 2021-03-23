@@ -174,7 +174,7 @@ session_start();
         if(<?php echo isset($_SESSION);?>){
             var newElement = document.createElement("p");
             newElement.innerHTML = "Logout";
-            newElement.style = "logout";
+            newElement.className = "logout";
             document.getElementById("ID").appendChild(newElement);
         }
 
