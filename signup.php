@@ -16,8 +16,14 @@ session_start();
 
             $test_name_query = "select user_name from users where user_name = \"'$user_name'\"";
             $test_name_result = mysqli_query($test_name_query);
-            if($test_name_result && mysqli_num_rows($test_name_result) < 1){
-                echo "USERNAME ALREADY TAKEN";
+            if(mysqli_num_rows($test_name_result) > 0){
+                echo "AAA";
+            }
+            else if(mysqli_num_rows($test_name_result) < 1){
+                echo "BBB";
+            }
+            if($test_name_result && mysqli_num_rows($test_name_result) > 0){
+                //echo "USERNAME ALREADY TAKEN";
                 header("Location: signup.php");
                 die;
             }
@@ -25,7 +31,7 @@ session_start();
             //save to database
             $user_id = random_num(20);
             $query = "insert into users (user_id,user_name,password) values ('$user_id','$user_name','$password')";
-            echo "valid";
+            //echo "valid";
             mysqli_query($con, $query);
 
             //header("Location: login.php");
