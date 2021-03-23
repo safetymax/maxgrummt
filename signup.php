@@ -18,7 +18,7 @@ session_start();
             if($test_name_result && mysqli_num_rows($test_name_query)>0){
                 echo "USERNAME ALREADY TAKEN";
                 //header("Location: signup.php");
-                die;
+                //die;
             }
             else{
             //save to database
@@ -28,7 +28,7 @@ session_start();
             //mysqli_query($con, $query);
 
             //header("Location: login.php");
-            die;
+            //die;
             }
         }
         else
