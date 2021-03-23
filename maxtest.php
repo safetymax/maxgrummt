@@ -42,18 +42,6 @@ session_start();
             left:0%;
             top: 0%;
         }
-        .div2{
-            height: max-content;
-            width:45vw;
-            background: lightgrey;
-            line-height:normal;
-
-            position: relative;
-            display: block;
-            z-index: 99;
-            left:0%;
-            top: 0%;
-        }
         ul{
             list-style-type: none;
         }
@@ -64,6 +52,15 @@ session_start();
 
             border: none;
             background: none;
+            color: rgb(246, 100, 222);
+        }
+        .textinput{
+            font-family:'Questrial', sans-serif;
+            letter-spacing: 3px;
+            font-size:1.5vw;
+
+            border: none;
+            background: white;
             color: rgb(246, 100, 222);
         }
         .button{
@@ -77,11 +74,10 @@ session_start();
 </head>
 <body>
 <div class="div1">
-    <div class="div2">
     <h1 class="text">Chat</h1>
     <script src="js/maxtest.js"></script>
     <form method="post">
-            <input class="text" type="text" name="message"><br><br>
+            <input class="textinput" type="text" name="message"><br><br>
             <input class="button" type="submit" value="Send">
     </form>
     <ul>
@@ -91,7 +87,6 @@ session_start();
         <li class="text"><?php echo $message_data[1]['user_name'].": ";echo $message_data[1]['msg']?></li>
         <li class="text"><?php echo $message_data[0]['user_name'].": ";echo $message_data[0]['msg']?></li>
     </ul>
-    </div>
     </div>
 </body>
 </html>
