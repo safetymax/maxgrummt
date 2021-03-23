@@ -105,7 +105,7 @@ session_start();
     }
 
     var x = setInterval(function() {
-        <?php $message_data = get_messages($con, 15);>
+        <?php $message_data = get_messages($con, 15);?>
     }, 1000);
     </script>
 </body>
