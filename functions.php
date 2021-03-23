@@ -69,7 +69,7 @@ function get_messages($con){
             $query = "select * from users a join messages b on a.user_id = b.outgoing_msg_id where b.id = '$i' limit 1";
             $result = mysqli_query($con, $query);
 
-            if($result && mysqli_num_rows($result) > 0){
+            if($result && mysqli_num_rows($result) == 1){
                 $new_message_data = mysqli_fetch_assoc($result);
     
                 echo $new_message_data;
