@@ -75,5 +75,5 @@ function get_messages($con){
                 echo $output;
             }
         }
-        return $output;
+        return "AAA";
 }
