@@ -39,6 +39,9 @@ session_start();
             left:0%;
             top: 40%;
         }
+        ul{
+            list-style-type: none;
+        }
     </style>
 </head>
 <body>
