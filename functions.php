@@ -72,8 +72,7 @@ function get_messages($con){
                 
                 $output = $new_message_data['user_id'];
 
-                echo $output;
+                return $output;
             }
         }
-        return "AAA";
 }
