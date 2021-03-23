@@ -12,7 +12,7 @@ session_start();
 
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
-        send_message($con, $user_data, $_POST['message']);
+        send_message($con, $_SESSION, $_POST['message']);
     }
 ?>
 
