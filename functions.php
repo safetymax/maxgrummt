@@ -57,18 +57,21 @@ function random_num($length)
     return $text;
 }
 
-function get_messages($con){
+function get_messages($con, $amount){
+        $output = [];
+
         $query = "select * from users a join messages b on a.user_id = b.outgoing_msg_id";
         $result = mysqli_query($con, $query);
         if($result && mysqli_num_rows($result) > 0){
             $message_data = mysqli_fetch_assoc($result);
         }
-        for($i = 1;$i<mysqli_num_rows($result)+1;$i++){
+        for($i = mysqli_num_rows($result)+1;$i>mysqli_num_rows($result)-$amount;$i++){
             $new_query = "select * from users a join messages b on a.user_id = b.outgoing_msg_id where b.id = '$i' limit 1";
             $new_result = mysqli_query($con, $query);
 
             $new_message_data = mysqli_fetch_assoc($new_result);
-            $output = $new_message_data['msg'];
+            $output[$i]=$new_message_data;
         }
         return $output;
+        die;
 }

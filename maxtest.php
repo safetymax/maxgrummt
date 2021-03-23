@@ -8,7 +8,7 @@ session_start();
 
     $user_data = check_loginplus($con);
 
-    $message_data = get_messages($con);
+    $message_data = get_messages($con,10);
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +22,6 @@ session_start();
 <body>
     <h1>Test</h1>
     <script src="js/maxtest.js"></script>
-    <p><?php echo $message_data; ?></p>
+    <p><?php echo $message_data[0]; ?></p>
 </body>
 </html>
