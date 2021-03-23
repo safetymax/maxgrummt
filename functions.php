@@ -77,5 +77,5 @@ function get_messages($con){
                 //echo $output;
             }
         }
-        return "A";
+        return $output;
 }
