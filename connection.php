@@ -1,9 +1,9 @@
 <?php
 
-//$dbhost = "localhost";
-//$dbuser = "safetymax";
-//$dbpass = "@mT7Q!maJ7gw8xX";
-//$dbname = "u168783728_users";
+$dbhost = "localhost";
+$dbuser = "safetymax";
+$dbpass = "@mT7Q!maJ7gw8xX";
+$dbname = "maximiliangrummt_accounts";
 
 
 if(!$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname))
