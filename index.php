@@ -3,8 +3,8 @@ session_start();
 
     $_SESSION;
 
-    include("connection.php");
-    include("functions.php");
+    include("sites/connection.php");
+    include("sites/functions.php");
 ?>
 
 <!DOCTYPE html>
