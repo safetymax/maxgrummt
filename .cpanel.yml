@@ -1,8 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/emgv2ta1qhn2/public_html/
-    - /bin/cp -R sites $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
-    - /bin/cp -R img $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH
