@@ -78,6 +78,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
     <input class="textinput" type="text" name="message"><br><br>
     <input class="button" type="submit" value="Send">
 </form>
-<p class="button"><?php for($i = 1;$i<=count($message_data)+1;$i+=1){ echo $message_data[$i]["message"]+$i;} ?></p>
+<p class="button"><?php for($i = 1;$i<=count($message_data)+1;$i+=1){ echo $message_data[$i]["message"];} ?></p>
 </body>
 </html>
