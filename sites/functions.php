@@ -81,7 +81,7 @@ function get_citations($con){
 
 function new_citation($con, $user_data, $message){
     if($msg){
-        if(isset($user_data['user_id']))
+        /*if(isset($user_data['user_id']))
         {
             $id = $user_data['user_id'];
             $query = "select * from users where user_id = '$id' limit 1";
@@ -90,7 +90,7 @@ function new_citation($con, $user_data, $message){
             {
                 $user_data = mysqli_fetch_assoc($result);
             }
-        }
+        }*/
         $user_id = $user_data['user_id'];
         $query = "insert into citations (user_id, message) values ('$user_id','$message')";
         mysqli_query($con, $query);
