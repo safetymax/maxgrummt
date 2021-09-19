@@ -139,8 +139,6 @@
 <body id="ID">
     <link href="js/index.js">    
     <link href="js/perlin.js">
-    <link href="sites/connection.php">
-    <link href="sites/functions.php">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.js"></script>
     <div class="div1">
