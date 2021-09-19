@@ -211,7 +211,7 @@
 
         //COUNTDOWN TIMER
 
-        var countDownDate = new Date("Mar 29, 2021 23:00:00").getTime();
+        var countDownDate = new Date("Sep 25, 2021 23:00:00").getTime();
 
         var x = setInterval(function() {
 
