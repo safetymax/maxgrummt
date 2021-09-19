@@ -20,6 +20,7 @@
     <link rel="import" href="sites/login.php">
     <link rel="import" href="sites/signup.php">
     <link rel="import" href="sites/logout.php">
+    <link rel="import" href="sites/chat.php">
     <link rel="import" href="js/index.js">
     <link rel="import" href="js/perlin.js">
 
