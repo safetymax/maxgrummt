@@ -27,7 +27,7 @@
                    if(password_verify($password,$dbpass))
                    {
                         $_SESSION['user_id'] = $user_data['user_id'];
-                        header("Location: .index.php");
+                        header("Location: \index.php");
                         die;
                    }
                 }
