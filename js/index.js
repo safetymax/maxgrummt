@@ -1,4 +1,6 @@
-let scene, camera, renderer, plane, geometry, material, mesh, yoff;
+
+
+/*let scene, camera, renderer, plane, geometry, material, mesh, yoff;
 
 function init(){
     scene = new THREE.Scene();
@@ -48,4 +50,4 @@ function animate(){
 }
 
 createPlane();
-animate();
+animate();*/

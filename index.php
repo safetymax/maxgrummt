@@ -29,6 +29,7 @@
         
         body {
             margin: 0;
+            background: rgb(60, 60, 60);
         }
         canvas{
             display: block;
@@ -154,7 +155,6 @@
     </style>
 </head>
 <body id="ID">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.js"></script>
     <div class="div1">
     <button class="header" onclick="myclick()">Maximilian Grummt</button>
     <p class="text" id="timer"></p>
