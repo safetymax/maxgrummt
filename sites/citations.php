@@ -79,7 +79,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
     <input class="button" type="submit" value="Send">
 </form>
 <script>
-console.log("<?php for($i = 1;$i<count($message_data);$i+=1){echo $message_data[$i]["message"];}?>");
+console.log("<?php echo $message_data[1]["message"]; ?>");
 </script>
 </body>
 </html>
