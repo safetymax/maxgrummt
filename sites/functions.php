@@ -70,7 +70,7 @@ function get_citations($con){
         $new_result = mysqli_query($con, $new_query);
 
         $new_citation_data = mysqli_fetch_assoc($new_result);
-        $output[$i] = $new_message_data;
+        $output[$i] = $new_citation_data;
     }
 
     return $output;
