@@ -48,9 +48,7 @@ function random_num($length)
         $length = 5;
     }
 
-    $len = rand(4,$length);
-
-    for($i = 0; $i < $len; $i++)
+    for($i = 0; $i < $length; $i++)
     {
         $text .= rand(0,9);
     }
