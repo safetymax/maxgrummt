@@ -1,7 +1,7 @@
 <?php
 
 $dbhost = "localhost";
-$dbuser = "root";
+$dbuser = "cpses_ma8kcazef3";
 $dbpass = "";
 $dbname = "maximil2_accounts";
 
