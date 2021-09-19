@@ -9,8 +9,6 @@ include("functions.php");
 $user_data = check_login($con);
 
 $message_data = get_citations($con);
-echo $message_data[1]["message"];
-die;
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
@@ -80,8 +78,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
     <input class="textinput" type="text" name="message"><br><br>
     <input class="button" type="submit" value="Send">
 </form>
-<script>
-console.log("<?php echo $message_data[1]["message"]; ?>");
-</script>
+<p><?php echo message_data[1]["message"]; ?></p>
 </body>
 </html>
