@@ -76,7 +76,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 <body>
 <form method="post">
     <input class="textinput" type="text" name="message" placeholder="New Citation" autocomplete="off"><br><br>
-    <input class="button" type="submit" value="Send">
+    <input class="button" type="submit" value="Add New Citation">
 </form>
 <p class="button"><?php for($i = 1;$i<=count($message_data);$i+=1){ echo "{$message_data[$i]["message"]} <br>";} ?></p>
 </body>
