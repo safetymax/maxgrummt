@@ -81,7 +81,7 @@ function get_citations($con){
 
 function new_citation($con, $user_data, $message){
     if($message){
-        /*if(isset($user_data['user_id']))
+        if(isset($user_data['user_id']))
         {
             $id = $user_data['user_id'];
             $query = "select * from users where user_id = '$id' limit 1";
@@ -90,12 +90,13 @@ function new_citation($con, $user_data, $message){
             {
                 $user_data = mysqli_fetch_assoc($result);
             }
-        }*/
+        }
         $user_id = $user_data['user_id'];
+        check_loginplus($con);
         $query = "insert into citations (user_id, message) values ('$user_id','$message')";
         mysqli_query($con, $query);
     }
-    //header("Location: citations.php");
+    header("Location: citations.php");
     return;
     die;
 }
