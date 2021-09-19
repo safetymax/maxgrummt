@@ -9,7 +9,7 @@ include("functions.php");
 $user_data = check_login($con);
 
 $message_data = get_citations($con);
-echo $message_data;
+echo $message_data[1];
 die;
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
