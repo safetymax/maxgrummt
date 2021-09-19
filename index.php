@@ -161,6 +161,7 @@
     </div>
     <button class="about" onclick="aboutclick()">About</button>
     <button class="blog" onclick="blogclick()">Blog</button>
+    <button class="chat" onclick="chatclick()">Citations</button>
     <!--<button class="chat" onclick="chatclick()">Chat</button>-->
 
     <script>
@@ -174,7 +175,7 @@
             
         }
         function chatclick(){
-            document.location.href = "sites/chat.php";
+            document.location.href = "sites/citations.php";
         }
 
         if(<?php echo isset($_SESSION['user_id']);?>+0 == 1){
