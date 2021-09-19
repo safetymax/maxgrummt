@@ -23,7 +23,7 @@ function check_loginplus($con)
 {
     if(isset($_SESSION['user_id']))
     {
-        if($_SESSION['user_id']=="1" || $_SESSION['user_id']=="3" ||  $_SESSION['user_id']=="58198071"){
+        if($_SESSION['user_id']=="1" || $_SESSION['user_id']=="2"){
             $id = $_SESSION['user_id'];
             $query = "select * from users where user_id = '$id' limit 1";
             $result = mysqli_query($con,$query);
