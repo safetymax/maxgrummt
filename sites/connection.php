@@ -1,6 +1,6 @@
 <?php
 
-$dbhost = "localhost";
+$dbhost = "localhost:3306";
 $dbuser = "cpses_ma8kcazef3";
 $dbpass = "";
 $dbname = "maximil2_accounts";
