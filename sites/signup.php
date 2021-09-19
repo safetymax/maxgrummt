@@ -81,8 +81,8 @@ session_start();
 <form method="post">
 <div style="font-size: 20px; margin: 10px; color: black;">Signup</div>
 <div style="font-size: 15px; margin: 10px; color: black;">working again, but all accounts had to be reset</div>
-<input class="text" type="text" name="user_name"><br><br>
-<input class="text" type="password" name="password"><br><br>
+<input class="text" type="text" name="user_name" value="Username"><br><br>
+<input class="text" type="password" name="password" value="Password"><br><br>
 
 <input class="button" type="submit" value="Signup"><br><br>
 
