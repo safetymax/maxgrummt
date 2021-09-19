@@ -137,10 +137,11 @@
     </style>
 </head>
 <body id="ID">
-    <script href="sites/connection.php"></script>
-    <script href="sites/functions.php"></script>
-    <script href="js/perlin.js"></script>
-    <script href="js/index.js"></script>
+    <link href="js/index.js">    
+    <link href="js/perlin.js">
+    <link href="sites/connection.php">
+    <link href="sites/functions.php">
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.js"></script>
     <div class="div1">
     <button class="header" onclick="myclick()">Maximilian Grummt</button>
