@@ -1,8 +1,8 @@
 <?php
 
 $dbhost = "localhost:3306";
-$dbuser = "cpses_ma8kcazef3";
-$dbpass = "";
+$dbuser = "maximil2_user";
+$dbpass = "MaxGrummt05!";
 $dbname = "maximil2_accounts";
 
 if(!$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname))
