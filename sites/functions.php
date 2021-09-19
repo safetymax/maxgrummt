@@ -95,7 +95,7 @@ function new_citation($con, $user_data, $message){
         $query = "insert into citations (user_id, message) values ('$user_id','$message')";
         mysqli_query($con, $query);
     }
-    header("Location: sites/citations.php");
+    header("Location: citations.php");
     return;
     die;
 }
