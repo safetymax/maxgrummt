@@ -174,7 +174,7 @@
             
         }
         function chatclick(){
-            document.location.href = "chat.php";
+            document.location.href = "sites/chat.php";
         }
 
         if(<?php echo isset($_SESSION['user_id']);?>+0 == 1){
