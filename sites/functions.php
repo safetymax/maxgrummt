@@ -65,7 +65,7 @@ function get_citations($con){
         $message_data = mysqli_fetch_assoc($result);
     }
 
-    for($i = 1;$i<mysqli_num_rows($result);$i+=1){
+    for($i = 1;$i<=mysqli_num_rows($result);$i+=1){
         $new_query = "select * from users a join citations b on a.user_id = b.user_id where b.c_id = '$i' limit 1";
         $new_result = mysqli_query($con, $new_query);
 
