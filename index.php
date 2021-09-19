@@ -150,14 +150,14 @@
     <button class="chat" onclick="chatclick()">Chat</button>
 
     <script>
-        /*<?php
-session_start();
+        <?php
+            session_start();
 
-    $_SESSION;
+            $_SESSION;
 
-    include("sites/connection.php");
-    include("sites/functions.php");
-?>*/
+            include("sites/connection.php");
+            include("sites/functions.php");
+        ?>
         function myclick(){
             window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
         }
