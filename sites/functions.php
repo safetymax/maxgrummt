@@ -80,7 +80,7 @@ function get_citations($con){
 }
 
 function new_citation($con, $user_data, $message){
-    if($msg){
+    if($message){
         /*if(isset($user_data['user_id']))
         {
             $id = $user_data['user_id'];
