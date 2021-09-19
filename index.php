@@ -16,6 +16,13 @@
     <link rel="icon" href="img/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+    <link rel="import" href="sites/login.php">
+    <link rel="import" href="sites/signup.php">
+    <link rel="import" href="sites/logout.php">
+    <link rel="import" href="js/index.js">
+    <link rel="import" href="js/perlin.js">
+
     <title>Maximilian Grummt</title>
     <style>
         
@@ -146,9 +153,6 @@
     </style>
 </head>
 <body id="ID">
-    <link href="js/index.js">    
-    <link href="js/perlin.js">
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.js"></script>
     <div class="div1">
     <button class="header" onclick="myclick()">Maximilian Grummt</button>
