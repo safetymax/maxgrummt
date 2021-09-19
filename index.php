@@ -161,7 +161,7 @@
     </div>
     <button class="about" onclick="aboutclick()">About</button>
     <button class="blog" onclick="blogclick()">Blog</button>
-    <button class="chat" onclick="chatclick()">Chat</button>
+    <!--<button class="chat" onclick="chatclick()">Chat</button>-->
 
     <script>
         function myclick(){

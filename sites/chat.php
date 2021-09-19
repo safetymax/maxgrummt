@@ -6,7 +6,7 @@ session_start();
     include("connection.php");
     include("functions.php");
 
-    $user_data = check_login($con);
+    $user_data = check_loginplus($con);
 
     $message_data = get_messages($con, 15);
 
