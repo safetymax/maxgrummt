@@ -149,7 +149,7 @@
             position: absolute;
             display: block;
             z-index: 99;
-            left: 24vw;
+            left: 30vw;
             top: 1%;
         }
     </style>
