@@ -14,7 +14,7 @@ session_start();
         {
             $password = password_hash($password, PASSWORD_DEFAULT);
 
-            $test_name_query = "select user_name from users where user_name = \"".$user_name."\"";
+            $test_name_query = "select name from users where name = \"".$user_name."\"";
             $test_name_result = mysqli_query($con, $test_name_query);
 
             if($test_name_result && mysqli_num_rows($test_name_result) > 0){
@@ -25,7 +25,7 @@ session_start();
             else{
             //save to database
             $user_id = random_num(20);
-            $query = "insert into users (user_id,user_name,password) values ('$user_id','$user_name','$password')";
+            $query = "insert into users (user_id,name,password) values ('$user_id','$user_name','$password')";
             mysqli_query($con, $query);
 
             header("Location: login.php");
