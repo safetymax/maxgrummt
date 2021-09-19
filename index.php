@@ -182,7 +182,7 @@
             newElement.innerHTML = "Logout";
             newElement.className = "log";
             newElement.onclick = function(){
-                document.location.href = "logout.php";
+                document.location.href = "sites/logout.php";
             }
             document.getElementById("ID").appendChild(newElement);
         }
@@ -191,7 +191,7 @@
             newElement.innerHTML = "Login";
             newElement.className = "log";
             newElement.onclick = function(){
-                document.location.href = "login.php";
+                document.location.href = "sites/login.php";
             }
             document.getElementById("ID").appendChild(newElement);
         }
