@@ -7,13 +7,6 @@ session_start();
     include("functions.php");
 
     $user_data = check_loginplus($con);
-
-    $message_data = get_messages($con, 5);
-
-    if($_SERVER['REQUEST_METHOD'] == "POST")
-    {
-        send_message($con, $_SESSION, $_POST['message']);
-    }
 ?>
 
 <!DOCTYPE html>
