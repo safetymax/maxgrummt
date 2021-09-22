@@ -52,11 +52,12 @@ session_start();
         }
 
         .logo {
+            width: 18%;
             filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, 0.25));
         }
 
         .logo:hover{
-            width: 18%;
+            width: 22%;
             height: auto;
         }
 
