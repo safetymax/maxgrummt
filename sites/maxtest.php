@@ -111,7 +111,7 @@ session_start();
         <div class="dropdowncontent">
             <ul class="no-bullets">
                 <br>
-                <li><button>TEST 1</button></li>
+                <li name="logButton">TEST 1</li>
                 <br>
                 <li>TEST 2</li>
                 <br>
@@ -125,12 +125,25 @@ session_start();
 
 
     <script>
-        function dropdown() {
-            console.log("Dropdown button pressed!");
-        }
         function roll() {
             window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+        }
 
+        if(<?php echo isset($_SESSION['user_id']);?>+0 == 1){
+            var newElement = document.getElementsByName("logButton");
+            newElement.innerHTML = "Logout";
+            newElement.onclick = function(){
+                document.location.href = "sites/logout.php";
+            }
+        }
+        else{
+            var newElement = document.getElementsByName("logButton");
+            newElement.innerHTML = "Login";
+            newElement.className = "log";
+            newElement.onclick = function(){
+                document.location.href = "sites/login.php";
+            }
+            //document.getElementById("ID").appendChild(newElement);
         }
     </script>
 </body>
