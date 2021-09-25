@@ -65,7 +65,6 @@ session_start();
         }
 
         .dropdowncontent{
-            position: absolute;
             display: none;
             font-family: "Sen", sans-serif;
             color: white;
