@@ -102,10 +102,10 @@
         <div class="circle"></div>
     </div>
     <div class="divlogo">
-        <img src="Group 5logoG.png" class="logo" onclick="roll()">
+        <img src="img/Group 5logoG.png" class="logo" onclick="roll()">
     </div>
     <div class="divdrop">
-        <img src="Group 7drop.png" class="dropdown" onclick="dropdown()">
+        <img src="img/Group 7drop.png" class="dropdown" onclick="dropdown()">
         <div class="dropdowncontent">
             <ul class="no-bullets">
                 <br>
