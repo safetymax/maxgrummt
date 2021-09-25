@@ -130,21 +130,17 @@ session_start();
         }
 
         if(<?php echo isset($_SESSION['user_id']);?>+0 == 1){
-            var newElement = document.getElementsByName("logButton");
-            newElement.innerHTML = "Logout";
-            newElement.onclick = function(){
+            document.getElementsByName("logButton").innerHTML = "Logout";
+            document.getElementsByName("logButton").onclick = function(){
                 document.location.href = "sites/logout.php";
             }
-            document.getElementById("ID").appendChild(newElement);
         }
         else{
-            var newElement = document.getElementsByName("logButton");
-            newElement.innerHTML = "Login";
-            newElement.className = "log";
-            newElement.onclick = function(){
+            document.getElementsByName("logButton").innerHTML = "Login";
+            document.getElementsByName("logButton").className = "log";
+            document.getElementsByName("logButton").onclick = function(){
                 document.location.href = "sites/login.php";
             }
-            document.getElementById("ID").appendChild(newElement);
         }
     </script>
 </body>
