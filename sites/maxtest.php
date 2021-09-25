@@ -83,7 +83,7 @@ session_start();
             padding: 0;
             font-family: "Sen", sans-serif;
             color: white;
-            font-size: 1vw;
+            font-size: 2vw;
         }
 
         .divdrop:hover .dropdowncontent{
