@@ -45,7 +45,6 @@ session_start();
         .divdrop {
             position: absolute;
             display: flex;
-            background: crimson;
             height: 5%;
             width: 5%;
         }
@@ -70,7 +69,9 @@ session_start();
             display: none;
             font-family: "Sen", sans-serif;
             color: white;
+            font-size: 1vw;
             background: #202020;
+            border-radius:20%;
             top: 6vh;
             left: 1vw;
             height: 20vh;
