@@ -60,7 +60,7 @@ session_start();
         }
 
         .dropdown {
-            top: 10%;
+            top: 100%;
             height: 100%;
             width: 100%;
         }
