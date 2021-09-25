@@ -68,7 +68,8 @@ session_start();
         .dropdowncontent{
             position: absolute;
             display: none;
-            font: "Sen";
+            font-family: "Sen", sans-serif;
+            color: white;
             background: #202020;
             top: 6vh;
             left: 1vw;
@@ -99,10 +100,10 @@ session_start();
     <div class="divdrop">
         <img src="Group 7drop.png" class="dropdown" onclick="dropdown()">
         <div class="dropdowncontent">
-            <ul>
-                <li>TEST1</li>
-                <li>TEST2</li>
-            </ul>
+            <p>TEST 1</p>
+            <p>TEST 2</p>
+            <p>TEST 3</p>
+            <p>TEST 4</p>
         </div>
     </div>
 
