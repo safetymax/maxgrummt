@@ -67,8 +67,9 @@ session_start();
             display: none;
             justify-content: center;
             align-items: center;
-            height: -200%;
-            width: 10%;
+            top: 500px;
+            height: 100%;
+            width: 100%;
         }
 
         .divdrop:hover .dropdowncontent{
