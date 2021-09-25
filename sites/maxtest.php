@@ -67,7 +67,7 @@ session_start();
             display: none;
             justify-content: center;
             align-items: center;
-            height: 300%;
+            height: 500%;
             width: 10%;
         }
 
