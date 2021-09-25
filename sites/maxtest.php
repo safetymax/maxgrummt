@@ -111,7 +111,7 @@ session_start();
         <div class="dropdowncontent">
             <ul class="no-bullets">
                 <br>
-                <li name="logButton">TEST 1</li>
+                <li id="logButton">TEST 1</li>
                 <br>
                 <li>TEST 2</li>
                 <br>
@@ -130,15 +130,14 @@ session_start();
         }
 
         if(<?php echo isset($_SESSION['user_id']);?>+0 == 1){
-            document.getElementsByName("logButton").innerHTML = "Logout";
-            document.getElementsByName("logButton").onclick = function(){
+            document.getElementById("logButton").innerHTML = "Logout";
+            document.getElementById("logButton").onclick = function(){
                 document.location.href = "sites/logout.php";
             }
         }
         else{
-            document.getElementsByName("logButton").innerHTML = "Login";
-            document.getElementsByName("logButton").className = "log";
-            document.getElementsByName("logButton").onclick = function(){
+            document.getElementById("logButton").innerHTML = "Login";
+            document.getElementById("logButton").onclick = function(){
                 document.location.href = "sites/login.php";
             }
         }
