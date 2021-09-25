@@ -100,9 +100,9 @@ session_start();
     <div class="divdrop">
         <img src="Group 7drop.png" class="dropdown" onclick="dropdown()">
         <div class="dropdowncontent">
-            <p>TEST 1</p><br>
-            <p>TEST 2</p><br>
-            <p>TEST 3</p><br>
+            <p>TEST 1</p><br><br>
+            <p>TEST 2</p><br><br>
+            <p>TEST 3</p><br><br>
             <p>TEST 4</p>
         </div>
     </div>
