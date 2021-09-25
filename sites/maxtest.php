@@ -108,9 +108,13 @@ session_start();
         <img src="Group 7drop.png" class="dropdown" onclick="dropdown()">
         <div class="dropdowncontent">
             <ul class="no-bullets">
+                <br>
                 <li>TEST 1</li>
+                <br>
                 <li>TEST 2</li>
+                <br>
                 <li>TEST 3</li>
+                <br>
                 <li>TEST 4</li>
             </ul>
         </div>
