@@ -8,231 +8,150 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 
-    <link rel="import" href="sites/login.php">
-    <link rel="import" href="sites/signup.php">
-    <link rel="import" href="sites/logout.php">
-    <link rel="import" href="sites/chat.php">
-    <link rel="import" href="js/index.js">
-    <link rel="import" href="js/perlin.js">
-
-    <title>Maximilian Grummt</title>
     <style>
-        
+        @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+        html {
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
         body {
-            margin: 0;
-            background: rgb(60, 60, 60);
+            background: #929292;
         }
-        canvas{
-            display: block;
+
+        .divlogo {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80%;
             width: 100%;
+        }
+
+        .divcircle {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100%;
+            width: 100%;
         }
-        .div1{
-            height: max-content;
-            width:100vw;
-            background: none;
-            line-height:normal;
-            text-align: center;
 
+        .divdrop {
             position: absolute;
-            display: block;
-            z-index: 99;
-            left:0%;
-            top: 40%;
+            display: flex;
+            height: 5%;
+            width: 5%;
         }
-        .header {
-            outline: 3px;
-            outline-width: 3px;
-            outline-style: solid;
-            outline-color: rgb(192, 192, 192);
 
-            font-family:'Questrial', sans-serif;
-            letter-spacing: 3px;
-            font-size:5vw;
-
-            border: none;
-            background: none;
-            color: rgb(246, 100, 222);
+        .logo {
+            width: 18%;
+            filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, 0.25));
         }
-        .text {
-            font-family:'Questrial', sans-serif;
-            letter-spacing: 3px;
-            font-size:2.5vw;
 
-            border: none;
-            background: none;
-            color: rgb(246, 100, 222);
+        .logo:hover{
+            width: 22%;
+            height: auto;
         }
-        .about{
-            outline: 1px;
-            outline-width: 1px;
-            outline-style: solid;
-            outline-color: rgb(192, 192, 192);
 
-            font-family:'Questrial', sans-serif;
-            letter-spacing: 0.1vw;
-            font-size: 2vw;
-            color: rgb(246, 100, 222);
+        .dropdown {
+            height: 100%;
+            width: 100%;
+        }
 
-            border: none;
-            background: none;
-
+        .dropdowncontent{
             position: absolute;
-            display: block;
-            z-index: 99;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            background: #202020;
+            border-radius:3%;
+            top: 100%;
             left: 1vw;
-            top: 1%;
+            min-height: 20vh;
+            min-width: 5vw;
         }
-        .blog{
-            outline: 1px;
-            outline-width: 1px;
-            outline-style: solid;
-            outline-color: rgb(192, 192, 192);
-
-            font-family:'Questrial', sans-serif;
-            letter-spacing: 0.1vw;
+        
+        ul.no-bullets {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-family: "Sen", sans-serif;
+            color: white;
             font-size: 2vw;
-            color: rgb(246, 100, 222);
-
-            border: none;
-            background: none;
-
-            position: absolute;
-            display: block;
-            z-index: 99;
-            left: 10vw;
-            top: 1%;
         }
-        .chat{
-            outline: 1px;
-            outline-width: 1px;
-            outline-style: solid;
-            outline-color: rgb(192, 192, 192);
 
-            font-family:'Questrial', sans-serif;
-            letter-spacing: 0.1vw;
-            font-size: 2vw;
-            color: rgb(246, 100, 222);
-
-            border: none;
-            background: none;
-
-            position: absolute;
-            display: block;
-            z-index: 99;
-            left: 17vw;
-            top: 1%;
+        .divdrop:hover .dropdowncontent{
+            display: flex;
         }
-        .log{
-            outline: 1px;
-            outline-width: 1px;
-            outline-style: solid;
-            outline-color: rgb(192, 192, 192);
 
-            font-family:'Questrial', sans-serif;
-            letter-spacing: 0.1vw;
-            font-size: 2vw;
-            color: rgb(246, 100, 222);
-
-            border: none;
-            background: none;
-
-            position: absolute;
-            display: block;
-            z-index: 99;
-            left: 30vw;
-            top: 1%;
+        .circle {
+            height: 155vh;
+            width: 155vh;
+            background-color: #BCBCBC;
+            border-radius: 50%;
         }
     </style>
 </head>
-<body id="ID">
-    <div class="div1">
-    <button class="header" onclick="myclick()">Maximilian Grummt</button>
-    <p class="text" id="timer"></p>
+
+<body>
+    <div class="divcircle">
+        <div class="circle"></div>
     </div>
-    <button class="about" onclick="aboutclick()">About</button>
-    <button class="blog" onclick="blogclick()">Blog</button>
-    <button class="chat" onclick="chatclick()">Citations</button>
-    <!--<button class="chat" onclick="chatclick()">Chat</button>-->
+    <div class="divlogo">
+        <img src="Group 5logoG.png" class="logo" onclick="roll()">
+    </div>
+    <div class="divdrop">
+        <img src="Group 7drop.png" class="dropdown" onclick="dropdown()">
+        <div class="dropdowncontent">
+            <ul class="no-bullets">
+                <br>
+                <li onclick="homeclick()"> home </li>
+                <br>
+                <li onclick="zitateclick()"> zitate </li>
+                <br>
+                <li onclick="aboutclick()"> about </li>
+                <br>
+                <li id="logButton">TEST 4</li>
+                <br>
+            </ul>
+        </div>
+    </div>
+
 
     <script>
-        function myclick(){
+        function roll() {
             window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
         }
+
+        function zitateclick(){
+            document.location.href = "sites/citations.php";    
+        }
+
         function aboutclick(){
-            //document.location.href = "Max/about.html";
+
         }
-        function blogclick(){
-            
-        }
-        function chatclick(){
-            document.location.href = "sites/citations.php";
+
+        function homeclick(){
+            document.location.href = "index.php";
         }
 
         if(<?php echo isset($_SESSION['user_id']);?>+0 == 1){
-            var newElement = document.createElement("button");
-            newElement.innerHTML = "Logout";
-            newElement.className = "log";
-            newElement.onclick = function(){
+            document.getElementById("logButton").innerHTML = " logout ";
+            document.getElementById("logButton").onclick = function(){
                 document.location.href = "sites/logout.php";
             }
-            document.getElementById("ID").appendChild(newElement);
         }
         else{
-            var newElement = document.createElement("button");
-            newElement.innerHTML = "Login";
-            newElement.className = "log";
-            newElement.onclick = function(){
+            document.getElementById("logButton").innerHTML = " login ";
+            document.getElementById("logButton").onclick = function(){
                 document.location.href = "sites/login.php";
             }
-            document.getElementById("ID").appendChild(newElement);
         }
-
-        window.addEventListener('resize', onWindowResize);
-
-        function onWindowResize(){
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-            
-            camera.position.z = window.innerWidth/3;
-
-            scene.remove(mesh);
-            createPlane();
-        }
-
-        //COUNTDOWN TIMER
-
-        var countDownDate = new Date("Sep 25, 2021 23:00:00").getTime();
-
-        var x = setInterval(function() {
-
-        var now = new Date().getTime();
-
-        var distance = countDownDate - now;
-
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s "+"-- UNTIL NEXT UPDATE";
-
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("timer").innerHTML = "NEW UPDATE OUT NOW";
-        }
-        }, 1000);
     </script>
 </body>
+
 </html>
