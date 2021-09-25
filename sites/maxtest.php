@@ -13,6 +13,8 @@ session_start();
 <head>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
         html {
             overflow-x: hidden;
             overflow-y: hidden;
@@ -66,11 +68,12 @@ session_start();
         .dropdowncontent{
             position: absolute;
             display: none;
+            font: "Sen";
             background: #202020;
-            top: 7vh;
-            left: 2vw;
-            height: 100%;
-            width: 100%;
+            top: 6vh;
+            left: 1vw;
+            height: 20vh;
+            width: 5vw;
         }
 
         .divdrop:hover .dropdowncontent{
