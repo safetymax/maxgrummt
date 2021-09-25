@@ -67,6 +67,7 @@ session_start();
         .dropdowncontent{
             position: absolute;
             display: none;
+            justify-content: center;
             align-items: center;
             background: #202020;
             border-radius:20%;
