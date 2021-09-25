@@ -65,16 +65,21 @@ session_start();
         }
 
         .dropdowncontent{
+            position: absolute;
             display: none;
-        }
-
-        .dropdown:hover {
-            height: 60%;
-            width: 60%;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
         }
 
         .divdrop:hover .dropdowncontent{
-            display: block;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10%;
+            width: 10%;
         }
 
         .circle {
