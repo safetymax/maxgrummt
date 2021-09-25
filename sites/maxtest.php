@@ -43,7 +43,7 @@ session_start();
         .divdrop {
             position: absolute;
             display: flex;
-            height: 100%;
+            height: 10%;
             width: 10%;
         }
 
@@ -67,8 +67,8 @@ session_start();
             display: none;
             justify-content: center;
             align-items: center;
-            height: 100%;
-            width: 100%;
+            height: 300%;
+            width: 10%;
         }
 
         .divdrop:hover .dropdowncontent{
