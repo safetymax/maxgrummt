@@ -70,7 +70,7 @@ session_start();
             justify-content: center;
             align-items: center;
             background: #202020;
-            border-radius:20%;
+            border-radius:3%;
             top: 100%;
             left: 1vw;
             min-height: 20vh;
@@ -111,11 +111,11 @@ session_start();
         <div class="dropdowncontent">
             <ul class="no-bullets">
                 <br>
-                <li onclick="homeclick()">home</li>
+                <li onclick="homeclick()"> home </li>
                 <br>
-                <li onclick="zitateclick()">zitate</li>
+                <li onclick="zitateclick()"> zitate </li>
                 <br>
-                <li onclick="aboutclick()">about</li>
+                <li onclick="aboutclick()"> about </li>
                 <br>
                 <li id="logButton">TEST 4</li>
                 <br>
@@ -142,13 +142,13 @@ session_start();
         }
 
         if(<?php echo isset($_SESSION['user_id']);?>+0 == 1){
-            document.getElementById("logButton").innerHTML = "logout";
+            document.getElementById("logButton").innerHTML = " logout ";
             document.getElementById("logButton").onclick = function(){
                 document.location.href = "sites/logout.php";
             }
         }
         else{
-            document.getElementById("logButton").innerHTML = "login";
+            document.getElementById("logButton").innerHTML = " login ";
             document.getElementById("logButton").onclick = function(){
                 document.location.href = "sites/login.php";
             }
