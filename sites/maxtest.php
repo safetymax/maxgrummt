@@ -43,9 +43,7 @@ session_start();
         .divdrop {
             position: absolute;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 10%;
+            height: 100%;
             width: 10%;
         }
 
