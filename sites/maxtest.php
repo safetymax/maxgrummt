@@ -67,15 +67,18 @@ session_start();
         .dropdowncontent{
             position: absolute;
             display: none;
-            font-family: "Sen", sans-serif;
-            color: white;
-            font-size: 1vw;
             background: #202020;
             border-radius:20%;
             top: 6vh;
             left: 1vw;
             height: 20vh;
             width: 5vw;
+        }
+
+        .dctext{
+            font-family: "Sen", sans-serif;
+            color: white;
+            font-size: 1vw;
         }
 
         .divdrop:hover .dropdowncontent{
@@ -101,10 +104,10 @@ session_start();
     <div class="divdrop">
         <img src="Group 7drop.png" class="dropdown" onclick="dropdown()">
         <div class="dropdowncontent">
-            <p>TEST 1</p>
-            <p>TEST 2</p>
-            <p>TEST 3</p>
-            <p>TEST 4</p>
+            <p class="dctext">TEST 1</p>
+            <p class="dctext">TEST 2</p>
+            <p class="dctext">TEST 3</p>
+            <p class="dctext">TEST 4</p>
         </div>
     </div>
 
