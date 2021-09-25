@@ -45,9 +45,8 @@ session_start();
             display: flex;
             justify-content: center;
             align-items: center;
-            top: 10%;
-            height: 50%;
-            width: 50%;
+            height: 10%;
+            width: 10%;
         }
 
         .logo {
@@ -61,8 +60,9 @@ session_start();
         }
 
         .dropdown {
-            height: 50%;
-            width: 50%;
+            top: 10%;
+            height: 100%;
+            width: 100%;
         }
 
         .dropdowncontent{
