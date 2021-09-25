@@ -60,8 +60,8 @@ session_start();
         }
 
         .dropdown {
-            height: 10%;
-            width: 10%;
+            height: 50%;
+            width: 50%;
         }
 
         .dropdowncontent{
