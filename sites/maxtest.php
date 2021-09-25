@@ -135,6 +135,7 @@ session_start();
             newElement.onclick = function(){
                 document.location.href = "sites/logout.php";
             }
+            document.getElementById("ID").appendChild(newElement);
         }
         else{
             var newElement = document.getElementsByName("logButton");
@@ -143,7 +144,7 @@ session_start();
             newElement.onclick = function(){
                 document.location.href = "sites/login.php";
             }
-            //document.getElementById("ID").appendChild(newElement);
+            document.getElementById("ID").appendChild(newElement);
         }
     </script>
 </body>
