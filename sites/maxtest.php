@@ -71,7 +71,7 @@ session_start();
             align-items: center;
             background: #202020;
             border-radius:20%;
-            top: 6vh;
+            top: 5%;
             left: 1vw;
             min-height: 20vh;
             min-width: 5vw;
