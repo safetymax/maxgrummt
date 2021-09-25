@@ -73,7 +73,7 @@ session_start();
             width: 100%;
         }
 
-        .divdrop:hover .dropdowncontent{
+        .dropdown:hover .dropdowncontent{
             display: flex;
         }
 
