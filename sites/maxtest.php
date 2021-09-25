@@ -111,13 +111,13 @@ session_start();
         <div class="dropdowncontent">
             <ul class="no-bullets">
                 <br>
-                <li id="logButton">TEST 1</li>
+                <li onclick="homeclick()">home</li>
                 <br>
-                <li>TEST 2</li>
+                <li onclick="zitateclick()">zitate</li>
                 <br>
-                <li>TEST 3</li>
+                <li onclick="aboutclick()">about</li>
                 <br>
-                <li>TEST 4</li>
+                <li id="logButton">TEST 4</li>
                 <br>
             </ul>
         </div>
@@ -129,14 +129,26 @@ session_start();
             window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
         }
 
+        function zitateclick(){
+            document.location.href = "sites/citations.php";    
+        }
+
+        function aboutclick(){
+
+        }
+
+        function homeclick(){
+            document.location.href = "index.php";
+        }
+
         if(<?php echo isset($_SESSION['user_id']);?>+0 == 1){
-            document.getElementById("logButton").innerHTML = "Logout";
+            document.getElementById("logButton").innerHTML = "logout";
             document.getElementById("logButton").onclick = function(){
                 document.location.href = "sites/logout.php";
             }
         }
         else{
-            document.getElementById("logButton").innerHTML = "Login";
+            document.getElementById("logButton").innerHTML = "login";
             document.getElementById("logButton").onclick = function(){
                 document.location.href = "sites/login.php";
             }
