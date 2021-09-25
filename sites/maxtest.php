@@ -10,8 +10,6 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-<html>
-
 <head>
 
     <style>
@@ -66,9 +64,17 @@ session_start();
             width: 50%;
         }
 
+        .dropdowncontent{
+            display: none;
+        }
+
         .dropdown:hover {
             height: 60%;
             width: 60%;
+        }
+
+        .divdrop:hover .dropdowncontent{
+            display: block;
         }
 
         .circle {
@@ -89,6 +95,12 @@ session_start();
     </div>
     <div class="divdrop">
         <img src="Group 7drop.png" class="dropdown" onclick="dropdown()">
+        <div class="dropdowncontent">
+            <ul>
+                <li>TEST1</li>
+                <li>TEST2</li>
+            </ul>
+        </div>
     </div>
 
 
