@@ -45,8 +45,8 @@ session_start();
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 10%;
-            width: 10%;
+            height: 7%;
+            width: 7%;
         }
 
         .logo {
