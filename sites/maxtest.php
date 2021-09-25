@@ -44,8 +44,8 @@ session_start();
             position: absolute;
             display: flex;
             background: crimson;
-            height: 100%;
-            width: 10%;
+            height: 5%;
+            width: 5%;
         }
 
         .logo {
@@ -59,8 +59,8 @@ session_start();
         }
 
         .dropdown {
-            height: 5%;
-            width: 50%;
+            height: 100%;
+            width: 100%;
         }
 
         .dropdowncontent{
@@ -73,7 +73,7 @@ session_start();
             width: 100%;
         }
 
-        .dropdown:hover .dropdowncontent{
+        .divdrop:hover .dropdowncontent{
             display: flex;
         }
 
