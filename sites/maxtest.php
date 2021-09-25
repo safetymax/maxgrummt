@@ -43,6 +43,7 @@ session_start();
         .divdrop {
             position: absolute;
             display: flex;
+            background: crimson;
             height: 10%;
             width: 10%;
         }
