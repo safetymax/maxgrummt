@@ -68,8 +68,8 @@ session_start();
             background: #202020;
             top: 7vh;
             left: 2vw;
-            height: 10vh;
-            width: 10vw;
+            height: 100vh;
+            width: 100vw;
         }
 
         .divdrop:hover .dropdowncontent{
