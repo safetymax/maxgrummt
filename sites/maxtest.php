@@ -44,7 +44,7 @@ session_start();
             position: absolute;
             display: flex;
             background: crimson;
-            height: 10%;
+            height: 100%;
             width: 10%;
         }
 
