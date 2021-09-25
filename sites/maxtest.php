@@ -74,8 +74,11 @@ session_start();
             height: 20vh;
             width: 5vw;
         }
-
-        .dctext{
+        
+        ul.no-bullets {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
             font-family: "Sen", sans-serif;
             color: white;
             font-size: 1vw;
@@ -104,10 +107,12 @@ session_start();
     <div class="divdrop">
         <img src="Group 7drop.png" class="dropdown" onclick="dropdown()">
         <div class="dropdowncontent">
-            <p class="dctext">TEST 1</p>
-            <p class="dctext">TEST 2</p>
-            <p class="dctext">TEST 3</p>
-            <p class="dctext">TEST 4</p>
+            <ul class="no-bullets">
+                <li>TEST 1</li>
+                <li>TEST 2</li>
+                <li>TEST 3</li>
+                <li>TEST 4</li>
+            </ul>
         </div>
     </div>
 
