@@ -68,6 +68,7 @@ session_start();
             justify-content: center;
             align-items: center;
             top: 7vh;
+            left: 2vw;
             height: 100%;
             width: 100%;
         }
