@@ -65,13 +65,11 @@ session_start();
         .dropdowncontent{
             position: absolute;
             display: none;
-            justify-content: center;
-            align-items: center;
             background: #202020;
             top: 7vh;
             left: 2vw;
-            height: 100%;
-            width: 100%;
+            height: 10vh;
+            width: 10vw;
         }
 
         .divdrop:hover .dropdowncontent{
