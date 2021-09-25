@@ -73,8 +73,8 @@ session_start();
             border-radius:20%;
             top: 6vh;
             left: 1vw;
-            height: 20vh;
-            width: 5vw;
+            min-height: 20vh;
+            min-width: 5vw;
         }
         
         ul.no-bullets {
@@ -118,6 +118,7 @@ session_start();
                 <li>TEST 3</li>
                 <br>
                 <li>TEST 4</li>
+                <br>
             </ul>
         </div>
     </div>
