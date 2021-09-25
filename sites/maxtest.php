@@ -74,12 +74,7 @@ session_start();
         }
 
         .divdrop:hover .dropdowncontent{
-            position: absolute;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 10%;
-            width: 10%;
         }
 
         .circle {
