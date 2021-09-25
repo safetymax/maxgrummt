@@ -67,6 +67,8 @@ session_start();
             display: none;
             justify-content: center;
             align-items: center;
+            background: #202020;
+            border-radius: 20%;
             top: 7vh;
             left: 2vw;
             height: 100%;
