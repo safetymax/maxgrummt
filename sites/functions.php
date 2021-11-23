@@ -144,7 +144,7 @@ function get_gossip($con, $amount, $off){
 }
 
 function new_gossip($con, $user_data, $message, $title){
-    if($message && $title){
+    if(isset($message) && isset($title)){
         if(isset($user_data['user_id']))
         {
             $id = $user_data['user_id'];
