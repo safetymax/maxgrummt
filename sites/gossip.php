@@ -30,7 +30,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
     </form>
 
     <script>
-        console.log(<?php echo "$gossip_data[0]"; ?>);
+        console.log(<?php echo "{$gossip_data[0]["title"]}"; ?>);
+        console.log(<?php echo "{$gossip_data[0]["message"]}"; ?>);
     </script>
 </body>
 
