@@ -8,7 +8,7 @@ include("functions.php");
 
 $user_data = check_loginhgv($con);
 
-$message_data = get_gossip($con, $amount, $off);
+//$gossip_data = get_gossip($con, $amount, $off);
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 <html>
 
 <head>
-    <title>HGV Gossip Box</title>
+    <title>HGV Gossip Box 0.1</title>
 </head>
 
 <body>
