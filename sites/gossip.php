@@ -8,7 +8,7 @@ include("functions.php");
 
 $user_data = check_loginhgv($con);
 
-//$gossip_data = get_gossip($con, $amount, $off);
+$gossip_data = get_gossip($con, 1, 0);
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
@@ -28,6 +28,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
         <input class="textinput" type="text" name="message" placeholder="Nachricht" autocomplete="off"><br><br>
         <input class="button" type="submit" value="Add">
     </form>
+
+    <script>
+        System.out.println(<?php echo "$gossip_data"; ?>);
+    </script>
 </body>
 
 </html>

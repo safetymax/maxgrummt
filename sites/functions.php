@@ -160,9 +160,9 @@ function new_gossip($con, $user_data, $message, $title){
         $query = "insert into gossip_data (title, msg, user_id) values ('$title','$message','$user_id')";
         mysqli_query($con, $query);
     }
-    //header("Location: citations.php");
-    //return;
-    die(($message && $title));
+    header("Location: gossip.php");
+    return;
+    die();
 }
 
 /*function get_messages($con, $amount){
