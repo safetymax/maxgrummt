@@ -160,7 +160,7 @@ function new_gossip($con, $user_data, $message, $title){
         $query = "insert into gossip_data (title, message, user_id) values ('$title','$message','$user_id')";
         mysqli_query($con, $query);
     }
-    //header("Location: gossip.php");
+    header("Location: citations.php");
     return;
     die;
 }
