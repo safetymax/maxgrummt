@@ -40,6 +40,27 @@ function check_loginplus($con)
     die;
 }
 
+function check_loginhgv($con)
+{
+    if(isset($_SESSION['user_id']))
+    {
+        if($_SESSION['user_id']=="1" || $_SESSION['user_id']=="2"){
+            $id = $_SESSION['user_id'];
+            $query = "select * from users where user_id = '$id' limit 1";
+            $result = mysqli_query($con,$query);
+            if($result && mysqli_num_rows($result) > 0)
+            {
+                $user_data = mysqli_fetch_assoc($result);
+                return $user_data;
+            }
+        }
+    }
+
+    //redirect to login
+    header("Location: login.php");
+    die;
+}
+
 function random_num($length)
 {
     $text = "";
@@ -95,6 +116,51 @@ function new_citation($con, $user_data, $message){
         mysqli_query($con, $query);
     }
     header("Location: citations.php");
+    return;
+    die;
+}
+
+
+function get_gossip($con, $amount, $off){
+    $output = [];
+    $limit = $amount+$off;
+    /*$query = "select * from gossip_data";
+    $result = mysqli_query($con, $query);
+
+    if($result && mysqli_num_rows($result) > 0){
+        $message_data = mysqli_fetch_assoc($result);
+    }*/
+
+    for($i = 1+$off;$i<$limit;$i+=1){
+        $new_query = "select * from gossip_data where msg_id = '$i' limit 1";
+        $new_result = mysqli_query($con, $new_query);
+
+        $new_gossip_data = mysqli_fetch_assoc($new_result);
+        $output[$i] = $new_gossip_data;
+    }
+
+    return $output;
+    die;
+}
+
+function new_gossip($con, $user_data, $message, $title){
+    if($message && $title){
+        if(isset($user_data['user_id']))
+        {
+            $id = $user_data['user_id'];
+            $query = "select * from users where user_id = '$id' limit 1";
+            $result = mysqli_query($con,$query);
+            if($result && mysqli_num_rows($result) > 0)
+            {
+                $user_data = mysqli_fetch_assoc($result);
+            }
+        }
+        $user_id = $user_data['user_id'];
+        check_loginhgv($con);
+        $query = "insert into gossip_data (title, message, user_id) values ('$title','$message','$user_id')";
+        mysqli_query($con, $query);
+    }
+    header("Location: gossip.php");
     return;
     die;
 }
