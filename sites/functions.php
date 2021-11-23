@@ -136,7 +136,7 @@ function get_gossip($con, $amount, $off){
         $new_result = mysqli_query($con, $new_query);
 
         $new_gossip_data = mysqli_fetch_assoc($new_result);
-        $output[$i] = $new_gossip_data;
+        $output[$i-1] = $new_gossip_data;
     }
 
     return $output;
