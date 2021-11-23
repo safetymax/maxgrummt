@@ -157,7 +157,7 @@ function new_gossip($con, $user_data, $message, $title){
         }
         $user_id = $user_data['user_id'];
         check_loginhgv($con);
-        $query = "insert into gossip_data (title, message, user_id) values ('$title','$message','$user_id')";
+        $query = "insert into gossip_data (title, msg, user_id) values ('$title','$message','$user_id')";
         mysqli_query($con, $query);
     }
     //header("Location: citations.php");
