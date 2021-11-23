@@ -131,8 +131,9 @@ function get_gossip($con, $amount, $off){
         $message_data = mysqli_fetch_assoc($result);
     }*/
 
-    for($i = 1+$off;$i<$limit;$i+=1){
-        $new_query = "select * from gossip_data where msg_id = '$i' limit 1";
+    for($i = 1;$i<=$limit;$i+=1){
+        $ioff = $i + $off;
+        $new_query = "select * from gossip_data where msg_id = '$ioff' limit 1";
         $new_result = mysqli_query($con, $new_query);
 
         $new_gossip_data = mysqli_fetch_assoc($new_result);
