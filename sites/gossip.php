@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 
     <script>
         console.log(<?php echo "{$gossip_data[0]["title"]}"; ?>);
-        console.log(<?php echo "{$gossip_data[0]["message"]}"; ?>);
+        console.log(<?php echo "{$gossip_data[0]["msg"]}"; ?>);
     </script>
 </body>
 
