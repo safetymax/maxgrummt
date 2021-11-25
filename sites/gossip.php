@@ -8,7 +8,9 @@ include("functions.php");
 
 $user_data = check_loginhgv($con);
 
-$gossip_data = get_gossip($con, 1, 0);
+$amount = 1;
+
+$gossip_data = get_gossip($con, $amount, 0);
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
@@ -33,7 +35,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
     </form>
     <section class="basic-grid">
         <?php
-            for($i = 0;$i<25;$i++){
+            for($i = 0;$i<$amount;$i++){
                 echo "<div class=\"widget\"><h3>";
                 echo "{$gossip_data[0]["title"]}";
                 echo "</h3><p>";
