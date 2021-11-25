@@ -1,13 +1,11 @@
 p {
     background-color: #606060;
-    width: 30%;
     font-size: 35px;
     word-wrap: break-word;
 }
 
 h3{
     font-size: 35px;
-    width: 30%;
 
 }
 
@@ -28,7 +26,7 @@ h3{
 
 .widget {
     background-color: #505050;
-    width: 30%;
+    width: 240px;
     height: auto;
     margin: 5px;
     border-style: solid;
