@@ -1,11 +1,13 @@
 p {
     background-color: #606060;
+    width: 30%;
     font-size: 35px;
     word-wrap: break-word;
 }
 
 h3{
     font-size: 35px;
+    width: 30%;
 
 }
 
