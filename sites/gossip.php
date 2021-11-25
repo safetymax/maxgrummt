@@ -33,11 +33,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
     </form>
     <section class="basic-grid">
         <?php
-            for($i = 0;$i<1;$i++){
+            for($i = 0;$i<25;$i++){
                 echo "<div class=\"widget\"><h3>";
-                echo "{$gossip_data[$i]["title"]}";
+                echo "{$gossip_data[0]["title"]}";
                 echo "</h3><p>";
-                echo "{$gossip_data[$i]["msg"]}";
+                echo "{$gossip_data[0]["msg"]}";
                 echo "</p></div>";
 
             }
